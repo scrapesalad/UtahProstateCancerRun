@@ -43,7 +43,7 @@
         <div class="hero">
             <video autoplay muted loop playsinline>
                 <source src="videos/marathon-hero.mp4" type="video/mp4">
-                <img src="images/hero-fallback.jpg" alt="Utah Marathon Runners">
+                <img src="images/hero-bg.jpg" alt="Scenic Utah mountains at sunset">
             </video>
             <div class="hero-content">
                 <h1>Utah Prostate Cancer Run</h1>
@@ -87,6 +87,36 @@
                 </div>
             </div>
         </div>
+
+        <section class="marathon-stats">
+            <div class="marathon-stats-container">
+                <div class="stats-list">
+                    <div class="stat-item-large">
+                        <span class="stat-number-large">55,644</span>
+                        <span class="stat-label-large">Finishers in 2024</span>
+                    </div>
+                    <div class="stat-item-large">
+                        <span class="stat-number-large">4:31:31</span>
+                        <span class="stat-label-large">Avg. Finish Time</span>
+                    </div>
+                    <div class="stat-item-large">
+                        <span class="stat-number-large">137</span>
+                        <span class="stat-label-large">Countries</span>
+                    </div>
+                    <div class="stat-item-large">
+                        <span class="stat-number-large">$520M</span>
+                        <span class="stat-label-large">Raised for Charity Since 2006</span>
+                    </div>
+                </div>
+                <div class="marathon-route">
+                    <div class="route-line"></div>
+                    <div class="route-marker start"></div>
+                    <div class="route-marker finish"></div>
+                    <div class="route-label start">START</div>
+                    <div class="route-label finish">FINISH</div>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main>
@@ -234,7 +264,9 @@
                         
                         <div class="elevation-profile">
                             <h3>Elevation Profile</h3>
-                            <img src="images/full-elevation.png" alt="Full Marathon Elevation Profile">
+                            <div class="elevation-content">
+                                <img src="images/elevation-profile.jpg" alt="Full Marathon Elevation Profile" class="elevation-chart">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -328,6 +360,100 @@
             </div>
         </section>
     </main>
+
+    <section id="sponsors" class="sponsors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Sponsors</h2>
+                <p class="subtitle">Supporting the Fight Against Prostate Cancer</p>
+            </div>
+            
+            <div class="sponsors-grid">
+                <div class="sponsor-tier platinum">
+                    <h3>Platinum Sponsors</h3>
+                    <div class="sponsor-logos">
+                        <div class="sponsor-logo">
+                            <img src="images/sponsors/huntsman-cancer.png" alt="Huntsman Cancer Institute">
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="images/sponsors/utah-cancer-foundation.png" alt="Utah Cancer Foundation">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sponsor-tier gold">
+                    <h3>Gold Sponsors</h3>
+                    <div class="sponsor-logos">
+                        <div class="sponsor-logo">
+                            <img src="images/sponsors/intermountain.png" alt="Intermountain Healthcare">
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="images/sponsors/university-utah-health.png" alt="University of Utah Health">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="become-sponsor">
+                <h3>Become a Sponsor</h3>
+                <p>Join us in making a difference in prostate cancer awareness and research.</p>
+                <button class="secondary-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cancer-info" class="cancer-info-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Understanding Prostate Cancer</h2>
+                <p class="subtitle">Knowledge is Power</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Early Detection</h3>
+                    <p>Prostate cancer is the second most commonly diagnosed cancer among U.S. men. 1 in 9 men will be diagnosed with prostate cancer in their lifetime. Early detection through regular screenings is crucial for successful treatment.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Support Resources</h3>
+                    <p>Connect with advocacy groups that provide education and support:</p>
+                    <ul class="resource-list">
+                        <li>ZERO—The End of Prostate Cancer</li>
+                        <li>Prostate Cancer Foundation</li>
+                        <li>Prostate Health Education Network</li>
+                        <li>Us TOO Support Network</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Living with Prostate Cancer</h3>
+                    <p>Managing your health while living with prostate cancer includes:</p>
+                    <ul class="health-tips">
+                        <li>Regular exercise and physical activity</li>
+                        <li>Proper nutrition and diet</li>
+                        <li>Mental health support</li>
+                        <li>Regular medical check-ups</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-cta">
+                <h3>Get Involved in Research</h3>
+                <p>Support cutting-edge research and clinical trials that are advancing prostate cancer treatment.</p>
+                <button class="primary-btn">Learn More About Research</button>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-content">

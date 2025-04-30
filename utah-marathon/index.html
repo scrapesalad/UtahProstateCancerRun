@@ -6,13 +6,26 @@
     <title>Utah Prostate Cancer Run</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .logo img {
+            height: 60px;
+            width: auto;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .logo img {
+                height: 50px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="main-nav">
             <div class="nav-container">
                 <a href="#" class="logo">
-                    <img src="images/logo.png" alt="Utah Prostate Cancer Run">
+                    <img src="images/logo.png" alt="UPCR - Utah Prostate Cancer Run">
                 </a>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
@@ -36,6 +49,24 @@
                 <h1>Utah Prostate Cancer Run</h1>
                 <h2>Running to Save Lives</h2>
                 <p class="event-date">October 19, 2025 | Murray, UT</p>
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
                     <button class="primary-btn">Register Now</button>
                     <button class="secondary-btn">Donate</button>
@@ -185,15 +216,15 @@
                     <div class="course-details">
                         <div class="course-map">
                             <picture>
-                                <source media="(min-width: 1200px)" srcset="images/course-map-1920.jpg">
-                                <source media="(min-width: 768px)" srcset="images/course-map-1024.jpg">
-                                <img src="images/course-map-640.jpg" alt="Course Map">
+                                <source media="(min-width: 1200px)" srcset="images/new-course-map-desktop.jpg">
+                                <source media="(min-width: 768px)" srcset="images/new-course-map-tablet.jpg">
+                                <img src="images/new-course-map-mobile.jpg" alt="Wheeler Farm Course Map">
                             </picture>
                             <div class="map-legend">
                                 <h4>Course Highlights</h4>
                                 <ul>
-                                    <li>Start: Downtown Salt Lake City</li>
-                                    <li>Finish: Liberty Park</li>
+                                    <li>Start: Wheeler Historic Farm</li>
+                                    <li>Finish: Wheeler Farm</li>
                                     <li>Elevation Gain: 1,200 ft</li>
                                     <li>Aid Stations: Every 2 miles</li>
                                     <li>Time Limit: 6 hours</li>
@@ -302,7 +333,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <p>Email: info@utahprostatecancerrun.org</p>
+                <p>Email: info@utahprostatecancerrun.com</p>
                 <p>Phone: (801) 555-1234</p>
             </div>
             <div class="footer-section">

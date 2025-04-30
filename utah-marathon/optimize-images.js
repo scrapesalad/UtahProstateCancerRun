@@ -3,9 +3,9 @@ const fs = require('fs');
 const path = require('path');
 
 const imageSizes = {
-    mobile: { width: 640, height: 360 },
-    tablet: { width: 1024, height: 576 },
-    desktop: { width: 1920, height: 1080 }
+    mobile: { width: 640, height: null },
+    tablet: { width: 1024, height: null },
+    desktop: { width: 1920, height: null }
 };
 
 const images = [
@@ -16,27 +16,39 @@ const images = [
     {
         input: 'images/course-map.jpg',
         output: 'images/course-map-{size}.jpg'
+    },
+    {
+        input: 'images/new-course-map.jpg',
+        output: 'images/new-course-map-{size}.jpg'
     }
 ];
 
 async function optimizeImages() {
     for (const image of images) {
-        for (const [size, dimensions] of Object.entries(imageSizes)) {
-            const outputPath = image.output.replace('{size}', size);
+        try {
+            const metadata = await sharp(image.input).metadata();
             
-            await sharp(image.input)
-                .resize(dimensions.width, dimensions.height, {
-                    fit: 'cover',
-                    position: 'center'
-                })
-                .jpeg({
-                    quality: 80,
-                    progressive: true,
-                    optimizeCoding: true
-                })
-                .toFile(outputPath);
-            
-            console.log(`Created ${outputPath}`);
+            for (const [size, dimensions] of Object.entries(imageSizes)) {
+                const outputPath = image.output.replace('{size}', size);
+                
+                // Calculate height maintaining aspect ratio
+                const height = dimensions.height || Math.round(dimensions.width * (metadata.height / metadata.width));
+                
+                await sharp(image.input)
+                    .resize(dimensions.width, height, {
+                        fit: 'contain',
+                        position: 'center'
+                    })
+                    .jpeg({
+                        quality: 85,
+                        progressive: true
+                    })
+                    .toFile(outputPath);
+                
+                console.log(`Created ${outputPath}`);
+            }
+        } catch (error) {
+            console.error(`Error processing ${image.input}:`, error);
         }
     }
 }

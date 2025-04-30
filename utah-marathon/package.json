@@ -1,0 +1,11 @@
+{
+  "name": "utah-marathon",
+  "version": "1.0.0",
+  "description": "Utah Prostate Cancer Run website",
+  "scripts": {
+    "optimize-images": "node optimize-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.6"
+  }
+} 

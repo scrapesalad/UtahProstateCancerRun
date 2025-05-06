@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Utah Prostate Cancer Run</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .register-hero {
+            background: linear-gradient(135deg, #0E4D92 0%, #1a6bb7 100%);
+            color: #fff;
+            padding: 60px 0 40px 0;
+            text-align: center;
+        }
+        .register-event-info {
+            background: #fff;
+            color: #222;
+            max-width: 600px;
+            margin: 40px auto 0 auto;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+            padding: 40px 32px 32px 32px;
+        }
+        .register-event-info h1 {
+            color: #0E4D92;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .register-event-info .event-details {
+            font-size: 1.2rem;
+            margin-bottom: 24px;
+        }
+        .register-event-info .event-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 32px;
+        }
+        .register-event-info .stat {
+            text-align: center;
+            min-width: 120px;
+            padding: 15px;
+            background: #f2f6fa;
+            border-radius: 8px;
+            color: #0E4D92;
+            font-weight: 700;
+        }
+        .register-btn-big {
+            display: block;
+            margin: 40px auto 0 auto;
+            padding: 24px 64px;
+            font-size: 2rem;
+            font-weight: 800;
+            background: #0E4D92;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(14,77,146,0.10);
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .register-btn-big:hover {
+            background: #1a6bb7;
+            transform: translateY(-3px) scale(1.03);
+        }
+        .register-description {
+            background: rgba(255,255,255,0.12);
+            border-radius: 18px;
+            box-shadow: 0 2px 12px rgba(14,77,146,0.10);
+            padding: 32px 24px;
+            margin: 0 auto 24px auto;
+            max-width: 600px;
+            color: #fff;
+            font-size: 1.25rem;
+            line-height: 1.7;
+            text-align: center;
+            font-weight: 400;
+        }
+        .register-description strong {
+            color: #fff;
+            font-weight: 700;
+        }
+        .countdown-timer {
+            background: linear-gradient(90deg, #0E4D92 60%, #1a6bb7 100%);
+            color: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(14,77,146,0.10);
+            padding: 28px 0 18px 0;
+            margin: 0 auto 32px auto;
+            max-width: 400px;
+            text-align: center;
+        }
+        .countdown-label {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .countdown-values {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+        .countdown-unit {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0 8px 0 2px;
+            color: #b3e0ff;
+        }
+        .highlight-info {
+            background: linear-gradient(90deg, #e0f2ff 60%, #b3e0ff 100%);
+            color: #0E4D92;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 8px;
+            box-shadow: 0 1px 6px rgba(14,77,146,0.08);
+        }
+        .register-footer {
+            background: linear-gradient(90deg, #0E4D92 60%, #1a6bb7 100%);
+            color: #fff;
+            padding: 36px 0 24px 0;
+            text-align: center;
+            margin-top: 48px;
+        }
+        .footer-contact h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .footer-contact p {
+            font-size: 1.1rem;
+            margin: 8px 0;
+            font-weight: 500;
+        }
+        .footer-contact a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        .footer-contact i {
+            margin-right: 8px;
+            color: #b3e0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-hero">
+        <div class="register-description">
+            <img src="upcr-app/assets/images/android-chrome-192x192.png" alt="Utah Prostate Cancer Run Logo" style="max-height:100px; margin-bottom: 12px;">
+            <p>
+                Join us for a day of <strong>community, awareness, and action!</strong><br>
+                Sign up for the <strong>5K Run/Walk</strong> or the <strong>1 Mile Family Walk</strong> and help support
+                <span style="color:#022b52; font-weight:600;">prostate cancer research</span> and local support services.
+            </p>
+        </div>
+        <h1>Register for the Utah Prostate Cancer Run & Walk</h1>
+    </div>
+    <div class="register-event-info">
+        <h1 style="text-align:center;">October 19th 2025</h1>
+        <div class="event-details" style="text-align:center;">
+            <p><strong>5K Run/Walk</strong> &bull; <strong>1 Mile Walk</strong></p>
+            <p>Murray, Utah</p>
+        </div>
+        <div class="countdown-timer" id="countdown-timer">
+            <div class="countdown-label">Event Countdown</div>
+            <div class="countdown-values">
+                <span id="days">0</span><span class="countdown-unit">d</span>
+                <span id="hours">0</span><span class="countdown-unit">h</span>
+                <span id="minutes">0</span><span class="countdown-unit">m</span>
+                <span id="seconds">0</span><span class="countdown-unit">s</span>
+            </div>
+        </div>
+        <div class="event-details" style="text-align:center;">
+            <p><span class="highlight-info"> <strong>Start Times:</strong> 5K - 7:30 AM &bull; 1 Mile - 9:00 AM </span></p>
+            <p><span class="highlight-info"> <strong>Packet Pickup:</strong> Oct 17-18 at Wheeler Historic Farm </span></p>
+            <p><strong>All proceeds benefit the Prostate Cancer Foundation and local support services.</strong></p>
+        </div>
+        <button class="register-btn-big" onclick="window.location.href='#'">REGISTER NOW</button>
+    </div>
+    <footer class="register-footer">
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@utahprostatecancerrun.org">info@utahprostatecancerrun.org</a></p>
+            <p><i class="fas fa-phone"></i> Phone: <a href="tel:801-555-1234">(801) 555-1234</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Salt Lake City, Utah</p>
+        </div>
+    </footer>
+    <script>
+        // Countdown Timer Script
+        const eventDate = new Date('2025-10-19T07:30:00');
+        function updateCountdown() {
+            const now = new Date();
+            const diff = eventDate - now;
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((diff / (1000 * 60)) % 60);
+                const seconds = Math.floor((diff / 1000) % 60);
+                document.getElementById('days').textContent = days;
+                document.getElementById('hours').textContent = hours;
+                document.getElementById('minutes').textContent = minutes;
+                document.getElementById('seconds').textContent = seconds;
+            } else {
+                document.getElementById('countdown-timer').innerHTML = '<div class="countdown-label">The event is happening now!</div>';
+            }
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html> 

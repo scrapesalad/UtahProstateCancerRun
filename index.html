@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>October 19th 2025</title>
+    <link rel="icon" type="image/x-icon" href="upcr-app/assets/images/favicon.ico">
+    <link rel="manifest" href="upcr-app/assets/images/site.webmanifest">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -12,9 +14,7 @@
     <header class="header">
         <nav class="navbar">
             <div class="logo">
-                <span class="logo-emoji" title="Prostate Cancer Ribbon">🎗️</span>
-                <span class="logo-main">UTAH</span>
-                <span class="logo-sub">PROSTATE CANCER RUN</span>
+                <img src="upcr-app/assets/images/android-chrome-192x192.png" alt="Utah Prostate Cancer Run Logo" class="header-logo">
             </div>
             <ul class="nav-links">
                 <li><a href="#Register">Register</a></li>
@@ -30,16 +30,14 @@
             </div>
         </nav>
     </header>
+    <div class="header-divider"></div>
 
     <!-- Hero Section -->
     <section class="hero-slider-section">
         <div class="hero-slider">
             <div class="slide active"><img src="upcr-app/assets/images/hero-bg.jpg" alt="Event Slide 0"></div>
-            <div class="slide"><img src="upcr-app/assets/images/slider1.jpg" alt="Event Slide 1"></div>
-            <div class="slide"><img src="upcr-app/assets/images/slider22.jpeg" alt="Event Slide 2" class="hero-heads"></div>
-            <div class="slide"><img src="upcr-app/assets/images/run3.jpg" alt="Event Slide 3"></div>
-            <div class="slide"><img src="upcr-app/assets/images/slider4.jpg" alt="Event Slide 4"></div>
-            <div class="slide"><img src="upcr-app/assets/images/slider5.jpg" alt="Event Slide 5"></div>
+            <div class="slide"><img src="upcr-app/assets/images/hero.bg.png" alt="Event Slide 1"></div>
+            <div class="slide"><img src="upcr-app/assets/images/slider2.jpeg" alt="Event Slide 2" class="hero-heads"></div>
             <div class="hero-overlay">
                 <h1>UTAH PROSTATE CANCER RUN</h1>
             </div>
@@ -81,6 +79,36 @@
         </div>
     </section>
 
+    <!-- Prostate Cancer Facts Section -->
+    <section id="prostate-facts" class="section travel-section">
+        <div class="section-container">
+            <h2 class="section-title">Prostate Cancer Facts</h2>
+            <div class="travel-grid">
+                <div class="travel-card">
+                    <div class="travel-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>What is Prostate Cancer?</h3>
+                    <p>Prostate cancer is the most common cancer among men (after skin cancer). It develops in the prostate, a small gland that produces seminal fluid.</p>
+                </div>
+                <div class="travel-card">
+                    <div class="travel-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Early Detection Saves Lives</h3>
+                    <p>Early-stage prostate cancer often has no symptoms. Regular screening (PSA test, digital rectal exam) is key for early detection and better outcomes.</p>
+                </div>
+                <div class="travel-card">
+                    <div class="travel-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Know the Risk Factors</h3>
+                    <p>Risk increases with age, family history, and being African American. Talk to your doctor about your risk and screening options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="section about-section">
         <div class="section-container">
@@ -92,36 +120,8 @@
                     <p>All proceeds benefit the Prostate Cancer Foundation and local support services.</p>
                 </div>
                 <div class="about-image">
-                    <img src="upcr-app/assets/images/hero-bg.jpg" alt="Runners at finish line">
+                    <img src="upcr-app/assets/images/hero-bg.jpeg" alt="Runners at finish line">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Feature Cards Section -->
-    <section class="feature-cards-section">
-        <div class="feature-cards-container">
-            <div class="feature-card">
-                <img src="upcr-app/assets/images/runner1.jpg" alt="Register for 2025">
-                <a href="#" class="feature-card-label">REGISTER FOR 2025</a>
-            </div>
-            <div class="feature-card">
-                <img src="upcr-app/assets/images/runner2.jpg" alt="2024 Highlights">
-                <a href="#" class="feature-card-label">2024 HIGHLIGHTS</a>
-            </div>
-            <div class="feature-card">
-                <img src="upcr-app/assets/images/runner3.jpg" alt="Volunteer">
-                <a href="#" class="feature-card-label">VOLUNTEER</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Event Highlights Section -->
-    <section class="event-highlights-section">
-        <div class="section-container">
-            <h2 class="section-title">Event Highlights</h2>
-            <div class="event-video-wrapper">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/lBQsu8SRAGk" title="Utah Prostate Cancer Run Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -180,7 +180,7 @@
             <h2 class="section-title">Course Map</h2>
             <div class="course-content-fixed">
                 <div class="course-map-fixed">
-                    <img src="upcr-app/assets/images/farmrun.jpg" alt="5K Course Map through Salt Lake City">
+                    <img src="upcr-app/assets/images/farmrun.jpeg" alt="5K Course Map through Salt Lake City">
                 </div>
                 <div class="course-details-fixed">
                     <h3>5K Course Highlights</h3>
@@ -196,96 +196,6 @@
                         <img src="upcr-app/assets/images/course-map.png" alt="Elevation chart">
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Travel Section -->
-    <section id="travel" class="section travel-section">
-        <div class="section-container">
-            <h2 class="section-title">Travel Information</h2>
-            <div class="travel-grid">
-                <div class="travel-card">
-                    <div class="travel-icon">
-                        <i class="fas fa-hotel"></i>
-                    </div>
-                    <h3>Host Hotels</h3>
-                    <p>Special rates at downtown hotels within walking distance of start/finish</p>
-                    <a href="#" class="travel-link">View Hotels</a>
-                </div>
-                <div class="travel-card">
-                    <div class="travel-icon">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <h3>Airport Info</h3>
-                    <p>Salt Lake City International (SLC) - 15 minutes from downtown</p>
-                    <a href="#" class="travel-link">Transportation Options</a>
-                </div>
-                <div class="travel-card">
-                    <div class="travel-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h3>Local Attractions</h3>
-                    <p>Explore Temple Square, Red Butte Garden, and Utah's natural beauty</p>
-                    <a href="#" class="travel-link">Things to Do</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section id="results" class="section results-section">
-        <div class="section-container">
-            <h2 class="section-title">Race Results</h2>
-            <div class="results-content">
-                <div class="results-info">
-                    <h3>2024 Results</h3>
-                    <p>View last year's race results while you train for 2025!</p>
-                    <div class="results-links">
-                        <a href="#" class="results-link">5K Overall Results</a>
-                        <a href="#" class="results-link">Age Group Results</a>
-                        <a href="#" class="results-link">Team Challenge</a>
-                    </div>
-                </div>
-                <div class="results-image">
-                    <img src="upcr-app/assets/images/results.jpeg" alt="Finish line celebration">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="section gallery-section">
-        <div class="section-container">
-            <h2 class="section-title">Event Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="upcr-app/assets/images/run1.jpg" alt="Runners at starting line">
-                    <div class="gallery-overlay">
-                        <p>2024 Starting Line</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="upcr-app/assets/images/runs1.jpeg" alt="Finish line celebrations">
-                    <div class="gallery-overlay">
-                        <p>Finish Line Celebrations</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="upcr-app/assets/images/run2.jpg" alt="Team photo">
-                    <div class="gallery-overlay">
-                        <p>Team Survivors</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="upcr-app/assets/images/gallery4.jpg" alt="Family walking">
-                    <div class="gallery-overlay">
-                        <p>Family Walk</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="#" class="btn">View More Photos</a>
             </div>
         </div>
     </section>
@@ -318,31 +228,16 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo"><img src="upcr-app/assets/images/logo.png" alt="Utah Prostate Cancer Run Logo" style="height:40px; vertical-align:middle;"></div>
-            <div class="footer-links">
-                <div class="link-column">
-                    <h4>Event Info</h4>
-                    <a href="#">Schedule</a>
-                    <a href="#">Course Maps</a>
-                    <a href="#">FAQs</a>
-                    <a href="#">Volunteer</a>
-                </div>
-                <div class="link-column">
-                    <h4>Charity</h4>
-                    <a href="#">Fundraising</a>
-                    <a href="#">Donate</a>
-                    <a href="#">Impact</a>
-                    <a href="#">Partners</a>
-                </div>
-                <div class="link-column">
-                    <h4>Connect</h4>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Newsletter</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Blog</a>
-                </div>
+        <div class="footer-container" style="flex-direction: column; align-items: center; gap: 0;">
+            <div class="footer-logo">
+                <img src="upcr-app/assets/images/logo.png" alt="Utah Prostate Cancer Run Logo">
             </div>
+            <nav class="footer-nav">
+                <a href="#Register">Register</a>
+                <a href="#events">Events</a>
+                <a href="#course">Course</a>
+                <a href="#results">Results</a>
+            </nav>
             <div class="social-links">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>

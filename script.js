@@ -138,4 +138,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     showSlide(0);
     startSlider();
+
+    // Hide/show header-divider on scroll
+    const headerDivider = document.querySelector('.header-divider');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 0) {
+            headerDivider.classList.add('hidden');
+        } else {
+            headerDivider.classList.remove('hidden');
+        }
+    });
 });

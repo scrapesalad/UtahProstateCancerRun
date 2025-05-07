@@ -1402,7 +1402,7 @@ img {
 .prominent-section {
     background: #3E4A60 !important;
     padding: 48px 0 32px 0;
-    border-radius: 18px;
+    border-radius: 0 !important;
     margin: 40px 0;
 }
 .prominent-section-container {
@@ -1436,7 +1436,7 @@ img {
 }
 .prominent-card {
     background: #fff;
-    border-radius: 12px;
+    border-radius: 0 !important;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
@@ -1487,18 +1487,49 @@ img {
 .hero-static-image {
     position: absolute;
     top: 40px;
-    left: 120px;
-    transform: none;
+    left: 40%;
+    transform: translateX(-50%);
     z-index: 10;
     width: 220px;
     height: 220px;
-    border-radius: 50%;
-    box-shadow: 0 4px 24px rgba(14,77,146,0.18);
+    border-radius: 50% !important;
+    aspect-ratio: 1/1;
     object-fit: cover;
-    background: #fff;
-    border: 6px solid #fff;
-    opacity: 0.85;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(14,77,146,0.18);
+    background: transparent;
+    opacity: 0.6;
+    border: 10px solid rgba(40, 50, 70, 0.55);
 }
 .hero-slider {
     position: relative;
+}
+
+.prominent-section,
+.prominent-section-container,
+.prominent-card,
+.travel-card,
+.event-card,
+.main-event-card,
+.main-card-logo,
+.hero-static-image {
+    border-radius: 0 !important;
+}
+
+.section-container,
+.main-container,
+.course-map-fixed img,
+.elevation-chart-fixed img,
+.register-link a,
+.register-btn,
+.cta-btn,
+.footer,
+.newsletter-bar {
+    border-radius: 0 !important;
+}
+
+.register-link a,
+.register-btn,
+.cta-btn {
+    border-radius: 6px !important;
 }

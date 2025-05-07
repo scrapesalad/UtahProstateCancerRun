@@ -459,18 +459,22 @@ img {
     line-height: 1.6;
 }
 .elevation-chart-fixed {
-    margin-top: 10px;
+    margin-top: 0 !important;
     overflow: visible;
     position: relative;
 }
 .elevation-chart-fixed img {
-    width: 100%;
-    max-width: 320px;
+    margin-top: 0 !important;
+    max-width: 600px !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(14,77,146,0.08);
     background: #fff;
     transition: transform 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s cubic-bezier(.4,0,.2,1);
     cursor: zoom-in;
+    padding-bottom: 24px;
 }
 .elevation-chart-fixed img:hover {
     transform: scale(1.5);

@@ -1539,6 +1539,8 @@ img {
     .hero-static-image {
         width: 180px;
         height: 180px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 

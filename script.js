@@ -3,32 +3,34 @@ document.addEventListener('DOMContentLoaded', function() {
     const hero = document.querySelector('.hero');
     const scrollIndicator = document.querySelector('.scroll-indicator');
     
-    // More dramatic gradient transition
-    window.addEventListener('scroll', function() {
-        const scrollPosition = window.scrollY;
-        const heroHeight = hero.offsetHeight;
-        const scrollPercent = Math.min(scrollPosition / heroHeight, 1);
-        
-        // Calculate color stops for the gradient
-        const startColor = `rgba(14, 77, 146, ${1 - scrollPercent * 0.7})`;
-        const midColor = `rgba(42, 109, 180, ${0.8 - scrollPercent * 0.6})`;
-        const endColor = `rgba(26, 26, 46, ${0.9 - scrollPercent * 0.5})`;
-        
-        hero.style.background = `linear-gradient(135deg, 
-            ${startColor} 0%, 
-            ${midColor} 50%, 
-            ${endColor} 100%)`;
-        
-        // Parallax effect
-        hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
-        
-        // Fade out scroll indicator
-        scrollIndicator.style.opacity = `${1 - scrollPercent * 2}`;
-        
-        // Add slight scale effect to hero content
-        const scaleValue = 1 - scrollPercent * 0.1;
-        document.querySelector('.hero-content').style.transform = `scale(${Math.max(scaleValue, 0.9)})`;
-    });
+    if (hero && scrollIndicator) {
+        // More dramatic gradient transition
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const heroHeight = hero.offsetHeight;
+            const scrollPercent = Math.min(scrollPosition / heroHeight, 1);
+            
+            // Calculate color stops for the gradient
+            const startColor = `rgba(14, 77, 146, ${1 - scrollPercent * 0.7})`;
+            const midColor = `rgba(42, 109, 180, ${0.8 - scrollPercent * 0.6})`;
+            const endColor = `rgba(26, 26, 46, ${0.9 - scrollPercent * 0.5})`;
+            
+            hero.style.background = `linear-gradient(135deg, 
+                ${startColor} 0%, 
+                ${midColor} 50%, 
+                ${endColor} 100%)`;
+            
+            // Parallax effect
+            hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+            
+            // Fade out scroll indicator
+            scrollIndicator.style.opacity = `${1 - scrollPercent * 2}`;
+            
+            // Add slight scale effect to hero content
+            const scaleValue = 1 - scrollPercent * 0.1;
+            document.querySelector('.hero-content').style.transform = `scale(${Math.max(scaleValue, 0.9)})`;
+        });
+    }
     
     // Smooth scroll to sections
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -139,13 +141,24 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlide(0);
     startSlider();
 
-    // Hide/show header-divider on scroll
-    const headerDivider = document.querySelector('.header-divider');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 0) {
-            headerDivider.classList.add('hidden');
-        } else {
-            headerDivider.classList.remove('hidden');
-        }
-    });
+    // Modal pop-out for course map
+    const courseMapImg = document.getElementById('courseMapImg');
+    const mapModal = document.getElementById('mapModal');
+    const mapModalImg = document.getElementById('mapModalImg');
+    const closeMapModal = document.getElementById('closeMapModal');
+
+    if (courseMapImg && mapModal && mapModalImg && closeMapModal) {
+        courseMapImg.addEventListener('click', function() {
+            mapModal.style.display = 'flex';
+            mapModalImg.src = this.src;
+        });
+        closeMapModal.addEventListener('click', function() {
+            mapModal.style.display = 'none';
+        });
+        mapModal.addEventListener('click', function(e) {
+            if (e.target === mapModal) {
+                mapModal.style.display = 'none';
+            }
+        });
+    }
 });

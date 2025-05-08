@@ -728,7 +728,7 @@ img {
 
 /* Modern Dark Footer */
 .footer {
-    background: #181818;
+    background: #3E4A60;
     color: #fff;
     padding: 30px 0 0;
     margin-top: 0;
@@ -1102,20 +1102,6 @@ img {
     }
 }
 
-.header-divider {
-    width: 100%;
-    height: 12px;
-    background: #fff;
-    z-index: 1001;
-    position: relative;
-    transition: height 0.3s, opacity 0.3s;
-}
-.header-divider.hidden {
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-}
-
 /* Main Event Card Section */
 .main-event-card-section {
     display: flex;
@@ -1151,16 +1137,11 @@ img {
     max-width: 500px;
 }
 .main-card-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    /* border-radius: 12px; */
-    border-radius: 0;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-    display: block;
-    aspect-ratio: 1/1;
+    border-radius: 50% !important;
+    border: 6px solid #3E4A60;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(14,77,146,0.10);
+    object-fit: cover;
 }
 .main-card-info-col {
     flex: 1 1 0%;
@@ -1275,12 +1256,20 @@ img {
     }
 }
 @media (max-width: 600px) {
-    .main-card-logo {
-        width: 120px;
-        padding: 6px;
+    .main-card-logo-col {
+        min-width: 0 !important;
+        max-width: 90vw !important;
+        height: auto !important;
+        justify-content: center;
+        align-items: center;
     }
-    .main-card-info-col h1 {
-        font-size: 1.2rem;
+    .main-card-logo {
+        width: 70vw !important;
+        max-width: 70vw !important;
+        height: auto !important;
+        padding: 0 !important;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -1370,7 +1359,7 @@ img {
 
 .hero-heads {
     object-fit: cover;
-    object-position: center 20%; /* Show more of the lower part, adjust as needed */
+    object-position: center 44%; /* Show more of the lower part, adjust as needed */
     width: 100%;
     height: 100%;
     min-height: 100%;
@@ -1491,19 +1480,16 @@ img {
 .hero-static-image {
     position: absolute;
     top: 40px;
-    left: 40%;
-    transform: translateX(-50%);
+    left: 320px;
+    transform: none;
     z-index: 10;
     width: 220px;
     height: 220px;
     border-radius: 50% !important;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    overflow: hidden;
     box-shadow: 0 4px 24px rgba(14,77,146,0.18);
+    object-fit: cover;
     background: transparent;
     opacity: 0.6;
-    border: 10px solid rgba(40, 50, 70, 0.55);
 }
 .hero-slider {
     position: relative;
@@ -1536,4 +1522,43 @@ img {
 .register-btn,
 .cta-btn {
     border-radius: 6px !important;
+}
+
+.course-map-img {
+    padding-bottom: 24px;
+    transition: transform 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s cubic-bezier(.4,0,.2,1);
+    cursor: zoom-in;
+    z-index: 2;
+}
+.course-map-img:hover {
+    transform: scale(1.7);
+    box-shadow: 0 8px 32px rgba(14,77,146,0.18);
+}
+
+@media (max-width: 600px) {
+    .hero-static-image {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 120px;
+        top: 16px;
+    }
+}
+
+.image-bluish-overlay {
+    position: relative;
+    display: inline-block;
+}
+.image-bluish-overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.blue-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(30, 100, 200, 0.35); /* bluish color, adjust as needed */
+    mix-blend-mode: lighten; /* or try 'screen' for a different effect */
+    border-radius: 50%;
+    pointer-events: none;
 }

@@ -11,13 +11,13 @@
     <meta property="og:url" content="https://www.utahprostatecancerrun.com/" />
     <meta property="og:title" content="Utah Prostate Cancer Run & Walk | 5K, 1 Mile Family Walk, Murray Utah" />
     <meta property="og:description" content="Join the Utah Prostate Cancer Run & Walk in Murray, Utah. 5K Run/Walk, 1 Mile Family Walk, raising awareness and funds for prostate cancer research and support. Register now!" />
-    <meta property="og:image" content="https://utahprostatecancerrun.com/upcr-app/assets/images/logo.png" />
+    <meta property="og:image" content="https://utahprostatecancerrun.com/upcr-app/assets/images/logoo.png" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://www.utahprostatecancerrun.com/" />
     <meta name="twitter:title" content="Utah Prostate Cancer Run & Walk | 5K, 1 Mile Family Walk, Murray Utah" />
     <meta name="twitter:description" content="Join the Utah Prostate Cancer Run & Walk in Murray, Utah. 5K Run/Walk, 1 Mile Family Walk, raising awareness and funds for prostate cancer research and support. Register now!" />
-    <meta name="twitter:image" content="https://www.utahprostatecancerrun.com/upcr-app/assets/images/logo.png" />
+    <meta name="twitter:image" content="https://www.utahprostatecancerrun.com/upcr-app/assets/images/logoo.png" />
     <link rel="icon" type="image/x-icon" href="upcr-app/assets/images/favicon.ico">
     <link rel="manifest" href="upcr-app/assets/images/site.webmanifest">
     <link rel="stylesheet" href="styles.css">
@@ -31,8 +31,9 @@
                 <img src="upcr-app/assets/images/android-chrome-192x192.png" alt="Utah Prostate Cancer Run Logo" class="header-logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#cause">The Cause</a></li>
-                <li><a href="#events">Event</a></li>
+                <li><a href="cause.html">The Cause</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li class="register-link"><a href="register.html">Register Now</a></li>
             </ul>
             <div class="hamburger">
@@ -42,13 +43,11 @@
             </div>
         </nav>
     </header>
-    <div class="header-divider"></div>
 
     <!-- Hero Section -->
     <section class="hero-slider-section">
         <div class="hero-slider">
-            <img src="upcr-app/assets/images/Untitled design.png" alt="Course Map" class="hero-static-image">
-            <div class="slide active"><img src="upcr-app/assets/images/hero-bg.jpg" alt="Event Slide 0"></div>
+            <img src="upcr-app/assets/images/logo11.png" alt="Course Map" class="hero-static-image">
             <div class="slide"><img src="upcr-app/assets/images/slider2.jpg" alt="Event Slide 2" class="hero-heads"></div>
             <div class="hero-overlay">
                 <h1></h1>
@@ -74,15 +73,20 @@
                     <p>Murray, Utah</p>
                 </div>
                 <div class="event-stats">
-                    <div class="stat">
-                        <span class="stat-label">Distance</span>
-                        <span class="stat-value">5K Run/Walk<br>1 Mile Walk</span>
-                    </div>
+                    <a href="register.html" class="stat-link" style="text-decoration:none;">
+                        <div class="stat">
+                            <span class="stat-label">Distance</span>
+                            <span class="stat-value">5K Run/Walk<br>1 Mile Walk</span>
+                        </div>
+                    </a>
                 </div>
                 <a href="#" class="register-btn" target="_blank">REGISTER NOW</a>
             </div>
             <div class="main-card-logo-col bottom-align">
-                <img src="upcr-app/assets/images/logo.png" alt="Utah Prostate Cancer Run Logo" class="main-card-logo">
+                <div class="image-bluish-overlay">
+                    <img src="upcr-app/assets/images/maincardlogoo.png" alt="Utah Prostate Cancer Run Logo" class="main-card-logo">
+                    <div class="blue-overlay"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -194,7 +198,7 @@
             <h2 class="section-title">Course Map</h2>
             <div class="course-content-fixed">
                 <div class="course-map-fixed">
-                    <img src="upcr-app/assets/images/farmrun.jpeg" alt="5K Course Map through Salt Lake City">
+                    <img src="upcr-app/assets/images/course-map.jpg" alt="Course Map" class="course-map-img" id="courseMapImg">
                 </div>
                 <div class="course-details-fixed">
                     <h3>5K Course Highlights</h3>
@@ -205,9 +209,6 @@
                         <li>Flat and fast course</li>
                         <li>2 Water stops</li>
                     </ul>
-                    <div class="elevation-chart-fixed">
-                        <img src="upcr-app/assets/images/course-map.jpg" alt="Elevation chart">
-                    </div>
                 </div>
             </div>
         </div>
@@ -243,11 +244,12 @@
     <footer class="footer">
         <div class="footer-container" style="flex-direction: column; align-items: center; gap: 0;">
             <div class="footer-logo">
-                <img src="upcr-app/assets/images/logo.png" alt="Utah Prostate Cancer Run Logo">
+                <img src="upcr-app/assets/images/logo11.png" alt="Utah Prostate Cancer Run Logo">
             </div>
             <nav class="footer-nav">
-                <a href="#cause">The Cause</a>
-                <a href="#events">Event</a>
+                <a href="cause.html">The Cause</a>
+                <a href="Event.html">Event</a>
+                <a href="contact.html">Contact</a>
             </nav>
             <div class="social-links">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -259,6 +261,7 @@
             <p>&copy; 2025 Utah Prostate Cancer Run. All rights reserved.</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

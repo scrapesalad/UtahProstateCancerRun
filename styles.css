@@ -728,8 +728,8 @@ img {
 
 /* Modern Dark Footer */
 .footer {
-    background: #3E4A60;
-    color: #fff;
+    background: #223a5e;
+    color: #222;
     padding: 30px 0 0;
     margin-top: 0;
 }
@@ -738,11 +738,41 @@ img {
     align-items: center !important;
     gap: 0 !important;
 }
+.footer-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 170px;
+    background: linear-gradient(135deg, rgba(14, 77, 146, 0.25) 0%, rgba(26, 107, 183, 0.35) 100%);
+    border-radius: 50%;
+    z-index: 0;
+}
 .footer-logo img {
     height: 160px !important;
     width: auto;
     display: block;
     margin: 0 auto 18px auto;
+    position: relative;
+    z-index: 1;
+}
+.footer-logo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(14, 77, 146, 0.25) 0%, rgba(26, 107, 183, 0.35) 100%);
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 0;
 }
 .footer-nav {
     display: flex;
@@ -751,7 +781,7 @@ img {
     margin: 18px 0 18px 0;
 }
 .footer-nav a {
-    color: #fff;
+    color: #0E4D92;
     font-size: 1.1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -759,7 +789,7 @@ img {
     transition: color 0.2s;
 }
 .footer-nav a:hover {
-    color: var(--primary-blue);
+    color: #1a6bb7;
 }
 .social-links {
     display: flex;
@@ -1510,6 +1540,20 @@ img {
     background: transparent;
     opacity: 0.6;
 }
+
+/* Remove or override all media queries for .hero-static-image */
+@media (max-width: 1200px), (max-width: 900px), (max-width: 768px), (max-width: 600px), (max-width: 480px), (max-width: 375px) {
+    .hero-static-image {
+        position: absolute !important;
+        top: 40px !important;
+        left: 320px !important;
+        transform: none !important;
+        width: 220px !important;
+        height: 220px !important;
+        opacity: 0.6 !important;
+    }
+}
+
 .hero-slider {
     position: relative;
 }
@@ -1552,24 +1596,6 @@ img {
 .course-map-img:hover {
     transform: scale(1.7);
     box-shadow: 0 8px 32px rgba(14,77,146,0.18);
-}
-
-@media (max-width: 480px) {
-    .hero-static-image {
-        width: 140px;
-        height: 140px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 375px) {
-    .hero-static-image {
-        width: 120px;
-        height: 120px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }
 
 .image-bluish-overlay {

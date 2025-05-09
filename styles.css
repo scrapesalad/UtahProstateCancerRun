@@ -1528,14 +1528,12 @@ img {
 
 .hero-static-image {
     position: absolute;
-    top: 40px;
-    left: 127px;
+    top: 50px;
+    left: -43px;
     z-index: 10;
     width: 220px;
     height: 220px;
-    border-radius: 50% !important;
     box-shadow: 0 4px 24px rgba(14,77,146,0.18);
-    object-fit: cover;
 }
 .hero-slider {
     position: relative;

@@ -1530,30 +1530,13 @@ img {
     position: absolute;
     top: 40px;
     left: 320px;
-    transform: none;
     z-index: 10;
     width: 220px;
     height: 220px;
     border-radius: 50% !important;
     box-shadow: 0 4px 24px rgba(14,77,146,0.18);
     object-fit: cover;
-    background: transparent;
-    opacity: 0.6;
 }
-
-/* Remove or override all media queries for .hero-static-image */
-@media (max-width: 1200px), (max-width: 900px), (max-width: 768px), (max-width: 600px), (max-width: 480px), (max-width: 375px) {
-    .hero-static-image {
-        position: absolute !important;
-        top: 40px !important;
-        left: 320px !important;
-        transform: none !important;
-        width: 220px !important;
-        height: 220px !important;
-        opacity: 0.6 !important;
-    }
-}
-
 .hero-slider {
     position: relative;
 }
@@ -1596,6 +1579,26 @@ img {
 .course-map-img:hover {
     transform: scale(1.7);
     box-shadow: 0 8px 32px rgba(14,77,146,0.18);
+}
+
+@media (max-width: 480px) {
+    .hero-static-image {
+        width: 140px;
+        height: 140px;
+        top: 40px;
+        left: 320px;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-static-image {
+        width: 120px;
+        height: 120px;
+        top: 40px;
+        left: 320px;
+        transform: translateX(-50%);
+    }
 }
 
 .image-bluish-overlay {

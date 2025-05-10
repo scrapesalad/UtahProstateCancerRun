@@ -1023,7 +1023,7 @@ img {
     margin-left: -50vw !important;
     margin-right: -50vw !important;
     min-height: 100vh !important;
-    height: 100vh !important;
+    height: 50vh !important;
     background: var(--primary-blue) !important;
     overflow: hidden !important;
     display: flex !important;
@@ -1142,8 +1142,6 @@ img {
 .main-event-card {
     background: #fff;
     /* border-radius: 12px; */
-    border-radius: 0;
-    box-shadow: 0 4px 18px rgba(14,77,146,0.10);
     padding: 32px 48px 32px 48px;
     max-width: 1100px;
     width: 100%;
@@ -1155,10 +1153,8 @@ img {
     position: relative;
 }
 .main-card-logo-col {
+    color: var(--primary-blue);
     flex: 0 0 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 400px;
     min-width: 400px;
     max-width: 500px;
@@ -1171,11 +1167,7 @@ img {
     z-index: 1;
     max-width: 100%;
     height: auto;
-    border-radius: 50% !important;
-    border: 6px solid #3E4A60;
-    background: #fff;
-    box-shadow: 0 4px 24px rgba(14,77,146,0.10);
-    object-fit: cover;
+   
 }
 .main-card-logo-bg {
     position: absolute;
@@ -1184,8 +1176,6 @@ img {
     transform: translate(-50%, -50%);
     width: 88%;
     height: 88%;
-    background: rgba(30, 40, 60, 0.65);
-    border-radius: 50%;
     z-index: 0;
     pointer-events: none;
 }
@@ -1524,16 +1514,16 @@ img {
 }
 .hero-bg-image {
     position: absolute !important;
-    top: 0 !important;
+    top: -80px !important;
     left: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
     object-fit: cover !important;
-    object-position: center center !important;
+    object-position: center top 180% !important;
     z-index: 0 !important;
     opacity: 0.85 !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: -200 !important;
 }
 
 .hero-static-image {

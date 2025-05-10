@@ -10,32 +10,24 @@
 <body>
     <!-- Header/Navbar -->
     <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="upcr-app/assets/images/android-chrome-192x192.png" alt="Utah Prostate Cancer Run Logo" class="header-logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="cause.html">The Cause</a></li>
-                <li><a href="Event.html">Event</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="register-link"><a href="register.html">Register Now</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+        <div class="header-container">
+            <img src="upcr-app/assets/images/android-chrome-192x192.png" alt="Header Logo" class="header-logo">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="cause.html">The Cause</a></li>
+                    <li><a href="Event.html">Event</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="register-link"><a href="register.html">Register Now</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero/Header Section -->
     <div class="hero-slider-section" style="min-height: 350px; height: 350px;">
-        <div class="hero-slider">
-            <img src="upcr-app/assets/images/logo11.png" alt="The Cause" class="hero-static-image">
-            <div class="hero-overlay">
-                
-            </div>
-        </div>
+        <img src="upcr-app/assets/images/slider2.jpg" alt="Hero Background" class="hero-bg-image">
+        <div class="hero-blue-overlay"></div>
+        <img src="upcr-app/assets/images/logos/android-chrome-192x192.png" alt="Hero Static" class="hero-static-image">
     </div>
 
     <section class="section about-section">
@@ -102,7 +94,8 @@
     <footer class="footer">
         <div class="footer-container" style="flex-direction: column; align-items: center; gap: 0;">
             <div class="footer-logo">
-                <img src="upcr-app/assets/images/logo11.png" alt="Utah Prostate Cancer Run Logo">
+                <div class="footer-logo-bg"></div>
+                <img src="upcr-app/assets/images/logos/android-chrome-192x192.png" alt="Utah Prostate Cancer Run Logo">
             </div>
             <nav class="footer-nav">
                 <a href="cause.html">The Cause</a>

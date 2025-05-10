@@ -148,6 +148,28 @@
     </style>
 </head>
 <body>
+    <!-- Header/Navbar -->
+    <header class="header">
+      <div class="header-container">
+        <img src="upcr-app/assets/images/android-chrome-192x192.png" alt="Header Logo" class="header-logo">
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="cause.html">The Cause</a></li>
+            <li><a href="Event.html">Event</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="register-link"><a href="register.html">Register Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-slider-section">
+        <img src="upcr-app/assets/images/slider2.jpg" alt="Hero Background" class="hero-bg-image">
+        <div class="hero-blue-overlay"></div>
+        <img src="upcr-app/assets/images/logos/android-chrome-192x192.png" alt="Hero Static" class="hero-static-image">
+    </section>
+
     <div class="register-hero">
         <div class="register-description">
             <img src="upcr-app/assets/images/android-chrome-192x192.png" alt="Utah Prostate Cancer Run Logo" style="max-height:100px; margin-bottom: 12px;">
@@ -181,13 +203,26 @@
         </div>
         <button class="register-btn-big" onclick="window.location.href='#'">REGISTER NOW</button>
     </div>
-    <footer class="register-footer">
-        <div class="footer-contact">
-            <h3>Contact Us</h3>
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@utahprostatecancerrun.org">info@utahprostatecancerrun.com</a></p>
-            <p><i class="fas fa-phone"></i> Phone: <a href="tel:801-555-1234">(801) 555-1234</a></p>
-            <p><i class="fas fa-map-marker-alt"></i> Salt Lake City, Utah</p>
+    <footer class="footer">
+      <div class="footer-container" style="flex-direction: column; align-items: center; gap: 0;">
+        <div class="footer-logo">
+          <div class="footer-logo-bg"></div>
+          <img src="upcr-app/assets/images/logos/android-chrome-192x192.png" alt="Utah Prostate Cancer Run Logo">
         </div>
+        <nav class="footer-nav">
+          <a href="cause.html">The Cause</a>
+          <a href="Event.html">Event</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Utah Prostate Cancer Run. All rights reserved.</p>
+      </div>
     </footer>
     <script>
         // Countdown Timer Script

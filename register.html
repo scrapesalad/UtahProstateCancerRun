@@ -145,13 +145,35 @@
             margin-right: 8px;
             color: #b3e0ff;
         }
+        @media (max-width: 600px) {
+            .main-card-logo-col {
+                justify-content: center !important;
+                align-items: center !important;
+                margin-left: 0 !important;
+                min-width: 0 !important;
+                display: flex !important;
+            }
+            .main-card-logo {
+                margin: 0 auto !important;
+                display: block !important;
+                max-width: 80vw !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+            .header-logo {
+                max-width: 120px !important;
+                margin-left: 12px !important;
+                height: auto !important;
+                display: block !important;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Header/Navbar -->
     <header class="header">
       <div class="header-container">
-        <img src="upcr-app/assets/images/android-chrome-1992x192.png" alt="Header Logo" class="header-logo">
+        <img src="upcr-app/assets/images/android-chrome-1992x192.png" alt="Header Logo" class="header-logo" style="margin-left: -5px;">
         <nav class="navbar">
           <ul class="nav-links">
             <li><a href="cause.html">The Cause</a></li>
@@ -164,11 +186,11 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-slider-section">
+    <section class="hero-slider-section" style="display: flex; align-items: center; justify-content: flex-start; min-height: 320px;">
         <img src="upcr-app/assets/images/slider2.jpg" alt="Hero Background" class="hero-bg-image">
         <div class="hero-blue-overlay"></div>
-        <div class="hero-static-image-bg">
-            <img src="upcr-app/assets/images/logomain.png" alt="Hero Static" class="hero-static-image">
+        <div class="hero-static-image-bg" style="margin-left: 32px; display: flex; align-items: center; height: 100%;">
+            <img src="upcr-app/assets/images/logomain.png" alt="Hero Static" class="hero-static-image" style="box-shadow: 0 8px 32px rgba(0,0,0,0.18); border-radius: 16px; max-width: 220px; width: 100%; height: auto; background: #fff; padding: 16px;">
         </div>
     </section>
 
@@ -237,8 +259,8 @@
     <footer class="footer">
       <div class="footer-container" style="flex-direction: column; align-items: center; gap: 0;">
         <div class="footer-logo">
-          <div class="footer-logo-bg"></div>
-          <img src="upcr-app/assets/images/logomain2.png" alt="Utah Prostate Cancer Run Logo">
+          <!-- <div class="footer-logo-bg"></div> -->
+          <img src="upcr-app/assets/images/logomain2.png" alt="Utah Prostate Cancer Run Logo" style="max-width: 100%; height: auto;">
         </div>
         <nav class="footer-nav">
           <a href="cause.html">The Cause</a>

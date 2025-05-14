@@ -1567,8 +1567,8 @@ img {
 
 .hero-static-image {
     position: absolute;
-    top: 35px;
-    left: 212px;
+    top: -225px;
+    left: 27px;
     width: 125px;
     max-width: 125px;
     height: 125px;

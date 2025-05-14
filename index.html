@@ -44,12 +44,64 @@
         position: static !important;
       }
     }
+    @media (max-width: 900px) {
+      .hamburger {
+        display: block !important;
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        z-index: 2000;
+      }
+      .hamburger .line {
+        display: block;
+        width: 28px;
+        height: 4px;
+        margin: 5px auto;
+        background: #fff;
+        border-radius: 2px;
+        transition: all 0.3s;
+      }
+      .nav-links {
+        position: fixed;
+        top: 64px;
+        left: -100vw;
+        width: 100vw;
+        height: calc(100vh - 64px);
+        background: #223a5e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.3s;
+        z-index: 1500;
+        gap: 32px;
+        padding: 0;
+      }
+      .nav-links.active {
+        left: 0;
+      }
+      .nav-links li {
+        margin: 0;
+      }
+      .navbar {
+        width: 100%;
+      }
+    }
     </style>
 </head>
 <body>
 <header class="header">
   <div class="header-container">
     <img src="upcr-app/assets/images/android-chrome-1992x192.png" alt="Header Logo" class="header-logo" style="margin-left: -5px;">
+    <button class="hamburger" aria-label="Open menu" style="display:none;">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
     <nav class="navbar">
       <ul class="nav-links">
         <li><a href="cause.html">The Cause</a></li>
@@ -61,7 +113,7 @@
   </div>
 </header>
     </header>
-    <section class="hero-slider-section">
+    <section class="hero-slider-section" style="display: flex; align-items: center; justify-content: flex-start; min-height: 320px;">
         <img src="upcr-app/assets/images/slider2.jpg" alt="Hero Background" class="hero-bg-image">
         <div class="hero-blue-overlay"></div>
         <div class="hero-static-image-bg" style="margin-left: -48px; transform: scale(1.5);">
@@ -271,5 +323,23 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      if (hamburger && navLinks) {
+        hamburger.addEventListener('click', function() {
+          navLinks.classList.toggle('active');
+          hamburger.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+          });
+        });
+      }
+    });
+    </script>
 </body>
 </html>

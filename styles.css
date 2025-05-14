@@ -1324,6 +1324,25 @@ img {
         display: block;
         margin: 0 auto;
     }
+    .hero-static-image-bg {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        position: static !important;
+        margin: 0 !important;
+    }
+    .hero-static-image {
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        width: 140px !important;
+        height: auto !important;
+        max-width: 80vw !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
 }
 
 @media (max-width: 900px) {

@@ -1358,8 +1358,10 @@ img {
 
 @media (max-width: 600px) {
     .header-logo {
-        width: 60px;
-        height: 60px;
+        width: 48px !important;
+        height: auto !important;
+        margin-left: 0 !important;
+        display: block !important;
     }
     .footer-logo img {
         height: 48px !important;
@@ -1728,4 +1730,16 @@ img {
 
 .contact-form button:hover {
     background: #1a6bb7;
+}
+
+@media (max-width: 900px) {
+    .hamburger {
+        display: block !important;
+    }
+    .nav-links {
+        left: -100vw;
+    }
+    .nav-links.active {
+        left: 0;
+    }
 }

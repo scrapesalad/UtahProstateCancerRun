@@ -1358,10 +1358,13 @@ img {
 
 @media (max-width: 600px) {
     .header-logo {
-        width: 48px !important;
+        width: 110px !important;
         height: auto !important;
         margin-left: 0 !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
         display: block !important;
+        max-width: 95vw !important;
     }
     .footer-logo img {
         height: 48px !important;
@@ -1584,7 +1587,7 @@ img {
 .hero-static-image {
     position: absolute;
     top: -225px;
-    left: 27px;
+    left: 99px;
     width: 125px;
     max-width: 125px;
     height: 125px;
@@ -1680,7 +1683,7 @@ img {
 }
 
 .header-logo {
-    margin-left: 200px;
+    margin-left: 100px;
     filter: brightness(0.85) saturate(0.7) contrast(1.1);
 }
 
@@ -1735,11 +1738,30 @@ img {
 @media (max-width: 900px) {
     .hamburger {
         display: block !important;
+        position: fixed !important;
+        top: 18px !important;
+        right: 18px !important;
+        z-index: 2001 !important;
+        background: none;
+        border: none;
+        width: 44px;
+        height: 44px;
+        padding: 0;
     }
     .nav-links {
         left: -100vw;
     }
     .nav-links.active {
         left: 0;
+    }
+    .hamburger .line {
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 6px auto;
+        background: #fff;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+        transition: all 0.3s;
     }
 }

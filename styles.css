@@ -85,12 +85,7 @@ img {
 }
 
 .section-title::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: var(--primary-blue);
-    margin: 15px auto;
+    content: none;
 }
 
 .btn {
@@ -431,20 +426,24 @@ img {
 
 /* Course Section (Fixed Layout) */
 .course-content-fixed {
+    align-items: flex-start !important;
     display: flex;
     gap: 40px;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     margin-top: 32px;
 }
 .course-map-fixed {
-    flex: 1 1 50%;
+    flex: 2 1 60%;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 600px;
 }
-.course-map-fixed img {
+.course-map-fixed img, .course-map-img {
     width: 100%;
-    max-width: 480px;
+    max-width: 540px;
+    min-width: 320px;
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(14,77,146,0.10);
     background: #fff;
@@ -499,9 +498,16 @@ img {
     .course-content-fixed {
         flex-direction: column;
         gap: 24px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
-    .course-map-fixed img, .elevation-chart-fixed img {
+    .course-map-fixed {
         max-width: 100%;
+    }
+    .course-map-fixed img, .course-map-img {
+        max-width: 100%;
+        min-width: 0;
     }
 }
 
@@ -1137,8 +1143,7 @@ img {
 }
 .main-event-card {
     background: #fff;
-    /* border-radius: 12px; */
-    padding: 32px 48px 32px 48px;
+    padding: 24px 24px 24px 24px;
     max-width: 1100px;
     width: 100%;
     color: var(--primary-blue);
@@ -1201,28 +1206,20 @@ img {
 .main-card-info-col h1 {
     font-size: 2.8rem;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     color: var(--primary-blue);
     line-height: 1.1;
     letter-spacing: -1px;
     text-align: center;
 }
 .main-card-info-col .event-details {
-    margin-bottom: 28px;
+    margin-bottom: 12px;
 }
 .main-card-info-col .event-details p {
-    font-size: 1.25rem;
-    color: var(--primary-dark);
-    margin: 0 0 4px 0;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    margin: 0 0 2px 0;
 }
 .main-card-info-col .event-stats {
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-    margin: 0 0 32px 0;
-    flex-wrap: wrap;
+    margin: 0 0 16px 0;
 }
 .main-card-info-col .stat {
     background: #f2f6fa;
@@ -1263,7 +1260,7 @@ img {
     transition: var(--transition);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 10px;
+    margin-top: 6px;
     display: block;
     width: 320px;
     max-width: 100%;
@@ -1472,7 +1469,7 @@ img {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 0 auto 32px auto;
+    margin: 0 auto 0px auto;
     box-shadow: 0 4px 18px rgba(14,77,146,0.10);
     transition: background 0.2s, color 0.2s, transform 0.2s;
     text-align: center;
@@ -1488,7 +1485,7 @@ img {
 
 .prominent-section {
     background: #3E4A60 !important;
-    padding: 48px 0 32px 0;
+    padding: 0.5px 0 0.5px 0;
     border-radius: 0 !important;
     margin: 40px 0;
 }
@@ -1508,12 +1505,7 @@ img {
     position: relative;
 }
 .prominent-section-title::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: var(--primary-blue);
-    margin: 15px auto 0 auto;
+    content: none;
 }
 .prominent-grid {
     display: grid;
@@ -1630,8 +1622,9 @@ img {
     z-index: 2;
 }
 .course-map-img:hover {
-    transform: scale(1.7);
-    box-shadow: 0 8px 32px rgba(14,77,146,0.18);
+    transform: none !important;
+    box-shadow: 0 4px 24px rgba(14,77,146,0.10) !important;
+    z-index: 2 !important;
 }
 
 @media (max-width: 480px) {
@@ -1763,5 +1756,102 @@ img {
         border-radius: 2px;
         box-shadow: 0 1px 4px rgba(0,0,0,0.18);
         transition: all 0.3s;
+    }
+}
+
+.course-event-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+@media (max-width: 900px) {
+    .course-event-cards {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        width: 100%;
+    }
+}
+.event-card {
+    flex: 1 1 0;
+    min-width: 220px;
+    max-width: 340px;
+}
+
+.mission-card {
+    max-width: 800px;
+    margin: 32px auto 32px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(14,77,146,0.08);
+    padding: 40px 36px 36px 36px;
+    position: relative;
+    text-align: left;
+}
+.mission-accent-bar {
+    width: 60px;
+    height: 6px;
+    background: var(--primary-blue);
+    border-radius: 3px;
+    margin: 0 auto 18px auto;
+}
+.mission-title {
+    text-align: center !important;
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px;
+    margin-bottom: 24px !important;
+    color: #223a5e !important;
+}
+.mission-lead {
+    font-size: 1.08rem;
+    color: #223a5e;
+    font-weight: 600;
+    margin-bottom: 18px;
+    text-align: left;
+}
+.mission-goals-intro {
+    font-size: 1rem;
+    color: #223a5e;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.mission-goals-list {
+    font-size: 0.98rem;
+    color: #223a5e;
+    margin-left: 24px;
+    margin-bottom: 0;
+    padding-left: 18px;
+}
+.mission-goals-list li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+@media (max-width: 600px) {
+    .mission-card {
+        padding: 18px 6vw 18px 6vw;
+    }
+    .mission-title {
+        font-size: 1.2rem !important;
+    }
+}
+
+.main-content-card {
+    max-width: 1100px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(14,77,146,0.08);
+    padding: 40px 36px 36px 36px;
+    position: relative;
+    text-align: left;
+}
+@media (max-width: 1200px) {
+    .main-content-card {
+        max-width: 96vw;
+        padding: 24px 2vw;
     }
 }

@@ -164,25 +164,33 @@
             color: #b3e0ff;
         }
         @media (max-width: 600px) {
-            .main-card-logo-col {
+            .hero-static-image-bg {
+                margin-left: 0 !important;
+                transform: none !important;
                 justify-content: center !important;
                 align-items: center !important;
-                margin-left: 0 !important;
-                min-width: 0 !important;
                 display: flex !important;
+                margin-top: 24px !important;
+                position: static !important;
+                width: 100% !important;
+                left: 0 !important;
             }
-            .main-card-logo {
-                margin: 0 auto !important;
-                display: block !important;
+            .hero-static-image {
                 max-width: 80vw !important;
                 width: 100% !important;
                 height: auto !important;
+                margin: 0 auto !important;
+                display: block !important;
+                position: static !important;
             }
             .header-logo {
-                max-width: 120px !important;
-                margin-left: 12px !important;
+                width: 110px !important;
                 height: auto !important;
+                margin-left: 0 !important;
+                margin-top: 10px !important;
+                margin-bottom: 10px !important;
                 display: block !important;
+                max-width: 95vw !important;
             }
         }
     </style>
@@ -192,11 +200,18 @@
     <!-- Header/Navbar -->
     <header class="header">
       <div class="header-container">
-        <img src="upcr-app/assets/images/android-chrome-1992x192.png" alt="Header Logo" class="header-logo" style="margin-left: -5px;">
+        <a href="index.html">
+          <img src="upcr-app/assets/images/android-chrome-1992x192.png" alt="Header Logo" class="header-logo">
+        </a>
+        <button class="hamburger" aria-label="Open menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
         <nav class="navbar">
           <ul class="nav-links">
-            <li><a href="cause.html">The Cause</a></li>
-            <li><a href="Event.html">Event</a></li>
+            <li><a href="index.html#mission">The Cause</a></li>
+            <li><a href="index.html#event-details">Event</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li class="register-link"><a href="register.html">Register Now</a></li>
           </ul>
@@ -209,7 +224,9 @@
         <img src="upcr-app/assets/images/slider3.jpeg" alt="Hero Background" class="hero-bg-image">
         <div class="hero-blue-overlay"></div>
         <div class="hero-static-image-bg" style="margin-left: -48px; transform: scale(1.5);">
-        <img src="upcr-app/assets/images/logomain.png" alt="Hero Static" class="hero-static-image">
+            <a href="index.html">
+                <img src="upcr-app/assets/images/logomain.png" alt="Hero Static" class="hero-static-image">
+            </a>
         </div>
     </section>
 
@@ -279,12 +296,11 @@
     <footer class="footer">
       <div class="footer-container" style="flex-direction: column; align-items: center; gap: 0;">
         <div class="footer-logo">
-          <!-- <div class="footer-logo-bg"></div> -->
           <img src="upcr-app/assets/images/logomain222.png" alt="Utah Prostate Cancer Run Logo" style="max-width: 100%; height: auto; background: #eaf3fb; padding: 2px; border-radius: 18px; box-shadow: 0 2px 2px rgba(14,77,146,0.08);">
         </div>
         <nav class="footer-nav">
-          <a href="cause.html">The Cause</a>
-          <a href="Event.html">Event</a>
+          <a href="index.html#mission">The Cause</a>
+          <a href="index.html#event-details">Event</a>
           <a href="contact.html">Contact</a>
         </nav>
         <div class="social-links">

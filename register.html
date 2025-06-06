@@ -193,6 +193,30 @@
                 max-width: 95vw !important;
             }
         }
+        .hero-slider-section {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 320px;
+            height: 340px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .hero-blue-overlay,
+        .hero-static-image-bg {
+            position: relative;
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
@@ -201,7 +225,7 @@
     <header class="header">
       <div class="header-container">
         <a href="index.html">
-          <img src="upcr-app/assets/images/android-chrome-1992x192.png" alt="Header Logo" class="header-logo">
+          <img src="upcr-app/assets/images/transparent.png" alt="Header Logo" class="header-logo" style="filter: brightness(0) invert(1); width: 99px; padding: 8px;">
         </a>
         <button class="hamburger" aria-label="Open menu">
           <span class="line"></span>
@@ -232,7 +256,7 @@
 
     <!-- Main Event Card Section -->
     <section class="main-event-card-section">
-        <div class="main-event-card">
+        <div class="main-event-card main-content-card">
             <div class="main-card-info-col">
                 <h1>SEPTEMBER 27, 2025</h1>
                 <div class="event-details">
@@ -252,7 +276,7 @@
             </div>
             <div class="main-card-logo-col bottom-align" style="display: flex; align-items: center; justify-content: center; padding: 0px 0; margin-left: -160px; min-width: 450px;">
                 <div style="background: #0e4d92; display: flex; justify-content: center; align-items: center; width: 250px; height: 250px; border-radius: 50%; margin: 0 auto;">
-                    <img src="upcr-app/assets/images/logomain.png" alt="Utah Prostate Cancer Run Logo"
+                    <img src="upcr-app/assets/images/logomain333.png" alt="Utah Prostate Cancer Run Logo"
                          class="main-card-logo"
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; background: none; padding: 0; box-shadow: 0 0px 0px rgba(0,0,0,0.12);">
                 </div>
@@ -261,8 +285,8 @@
     </section>
 
     <div class="register-hero">
-        <div class="register-description">
-            <img src="upcr-app/assets/images/android-chrome-11192x192.png" alt="Utah Prostate Cancer Run Logo" style="max-height:100px; margin-bottom: 12px;">
+        <div class="register-description section-container main-content-card">
+            <img src="upcr-app/assets/images/logoss.png" alt="Utah Prostate Cancer Run Logo" style="max-height:100px; margin-bottom: 12px;">
             <p>
                 Join us for a day of <strong>community, awareness, and action!</strong><br>
                 Sign up for the <strong>5K Run/Walk</strong> or the <strong>1 Mile Family Walk</strong> and help support
@@ -271,7 +295,7 @@
         </div>
         <h1>Register for the Utah Prostate Cancer Run & Walk</h1>
     </div>
-    <div class="register-event-info">
+    <div class="register-event-info section-container main-content-card">
         <h1 style="text-align:center;">September 27th 2025</h1>
         <div class="event-details" style="text-align:center;">
             <p><strong>5K Run/Walk</strong> &bull; <strong>1 Mile Walk</strong></p>
@@ -296,7 +320,9 @@
     <footer class="footer">
       <div class="footer-container" style="flex-direction: column; align-items: center; gap: 0;">
         <div class="footer-logo">
-          <img src="upcr-app/assets/images/logomain222.png" alt="Utah Prostate Cancer Run Logo" style="max-width: 100%; height: auto; background: #eaf3fb; padding: 2px; border-radius: 18px; box-shadow: 0 2px 2px rgba(14,77,146,0.08);">
+          <a href="https://summiturologygroup.com/" target="_blank" rel="noopener">
+            <img src="upcr-app/assets/images/logomain222.png" alt="Utah Prostate Cancer Run Logo" style="max-width: 100%; height: auto; background: #eaf3fb; padding: 2px; border-radius: 18px; box-shadow: 0 2px 2px rgba(14,77,146,0.08);">
+          </a>
         </div>
         <nav class="footer-nav">
           <a href="index.html#mission">The Cause</a>

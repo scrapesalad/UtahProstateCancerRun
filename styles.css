@@ -165,7 +165,7 @@ img {
 }
 
 .logo img {
-    max-height: 80px;
+    max-height: 40px;
     height: auto;
     width: auto;
 }
@@ -1140,11 +1140,14 @@ img {
     z-index: 10;
     margin-top: -100px;
     margin-bottom: 48px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-event-card {
     background: #fff;
-    padding: 24px 24px 24px 24px;
-    max-width: 1100px;
+    padding: 40px 40px 40px 40px;
+    max-width: 1200px;
     width: 100%;
     color: var(--primary-blue);
     display: flex;
@@ -1152,6 +1155,9 @@ img {
     align-items: center;
     gap: 40px;
     position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 0 !important;
 }
 .main-card-logo-col {
     position: relative;
@@ -1569,7 +1575,7 @@ img {
     width: 100vw !important;
     height: 100vh !important;
     object-fit: cover !important;
-    object-position: center top 180% !important;
+    object-position: center top 60% !important;
     z-index: 0 !important;
     opacity: 0.85 !important;
     margin: 0 !important;
@@ -1676,8 +1682,13 @@ img {
 }
 
 .header-logo {
-    margin-left: 100px;
-    filter: brightness(0.85) saturate(0.7) contrast(1.1);
+    max-height: 40px !important;
+    height: 40px !important;
+    width: auto !important;
+    margin-left: 100px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: block !important;
 }
 
 .contact-container {
@@ -1781,13 +1792,13 @@ img {
     max-width: 340px;
 }
 
-.mission-card {
-    max-width: 800px;
-    margin: 32px auto 32px auto;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(14,77,146,0.08);
-    padding: 40px 36px 36px 36px;
+.mission-card, .main-content-card {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    background: #fff !important;
+    border-radius: 18px !important;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.04) !important;
+    padding: 40px 40px 40px 40px !important;
     position: relative;
     text-align: left;
 }
@@ -1836,22 +1847,5 @@ img {
     }
     .mission-title {
         font-size: 1.2rem !important;
-    }
-}
-
-.main-content-card {
-    max-width: 1100px;
-    margin: 32px auto;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(14,77,146,0.08);
-    padding: 40px 36px 36px 36px;
-    position: relative;
-    text-align: left;
-}
-@media (max-width: 1200px) {
-    .main-content-card {
-        max-width: 96vw;
-        padding: 24px 2vw;
     }
 }

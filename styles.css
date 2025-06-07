@@ -52,7 +52,6 @@ img {
     padding-right: 32px;
     box-sizing: border-box;
     background: white;
-    border-radius: 18px;
     box-shadow: 0 4px 32px rgba(0,0,0,0.04);
 }
 
@@ -94,7 +93,6 @@ img {
     background: var(--primary-blue);
     color: white;
     border: none;
-    border-radius: 4px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -207,7 +205,6 @@ img {
 .register-link a {
     background: var(--primary-blue);
     padding: 8px 20px;
-    border-radius: 4px;
     transition: var(--transition);
 }
 
@@ -354,6 +351,7 @@ img {
     display: flex;
     align-items: center;
     gap: 50px;
+    padding-bottom: 32px;
 }
 
 .about-text {
@@ -454,6 +452,7 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     gap: 24px;
+    padding-bottom: 32px;
 }
 .course-details-fixed h3 {
     font-size: 1.3rem;
@@ -850,12 +849,12 @@ img {
     justify-content: center;
 }
 #newsletterForm input[type="email"] {
-    padding: 12px;
-    border-radius: 4px;
-    border: none;
-    font-size: 1rem;
-    width: 60%;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    width: 100%;
     max-width: 300px;
+    margin-right: 10px;
+    font-size: 1rem;
 }
 #newsletterForm .btn {
     padding: 12px 28px;
@@ -1143,6 +1142,7 @@ img {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 0 !important;
 }
 .main-event-card {
     background: #fff;
@@ -1261,7 +1261,7 @@ img {
     padding: 18px 0;
     font-size: 1.2rem;
     font-weight: 800;
-    border-radius: 8px;
+    border-radius: 0 !important;
     cursor: pointer;
     transition: var(--transition);
     text-transform: uppercase;
@@ -1281,7 +1281,7 @@ img {
         flex-direction: column;
         align-items: center;
         padding: 32px 10px 24px 10px;
-        border-radius: 18px;
+        border-radius: 0 !important;
         gap: 18px;
     }
     .main-card-logo-col {
@@ -1592,33 +1592,12 @@ img {
     z-index: 10;
 }
 
-.prominent-section,
-.prominent-section-container,
-.prominent-card,
-.travel-card,
-.event-card,
-.main-event-card,
-.main-card-logo,
-.hero-static-image {
+.main-event-card-section, .main-event-card, .main-content-card, .mission-card, .section-container {
     border-radius: 0 !important;
 }
 
-.section-container,
-.main-container,
-.course-map-fixed img,
-.elevation-chart-fixed img,
-.register-link a,
-.register-btn,
-.cta-btn,
-.footer,
-.newsletter-bar {
+.main-card-info-col .register-btn {
     border-radius: 0 !important;
-}
-
-.register-link a,
-.register-btn,
-.cta-btn {
-    border-radius: 6px !important;
 }
 
 .course-map-img {
@@ -1801,6 +1780,7 @@ img {
     padding: 40px 40px 40px 40px !important;
     position: relative;
     text-align: left;
+    border-radius: 0 !important;
 }
 .mission-accent-bar {
     width: 60px;
@@ -1848,4 +1828,8 @@ img {
     .mission-title {
         font-size: 1.2rem !important;
     }
+}
+
+.prominent-card, .travel-card, .event-card, .feature-card, .cta-btn, .main-card-info-col .stat, .register-btn, .about-image, .results-link, .gallery-item, .contact-container, .contact-form input, .contact-form button, .register-event-info, .register-event-info .stat, .register-btn-big, .register-description, .highlight-info, .main-card-logo-bg, .course-map-fixed img, .course-map-img, .elevation-chart-fixed img, .footer-logo img, .newsletter-bar, .newsletter-container, .newsletter-bar h3, .newsletter-bar p, #newsletterForm input[type="email"], #newsletterForm .btn {
+    border-radius: 0 !important;
 }

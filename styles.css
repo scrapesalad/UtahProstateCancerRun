@@ -229,7 +229,7 @@ img {
 /* Hero Section */
 .hero {
     height: 100vh;
-    min-height: 800px;
+    min-height: 00px;
     display: flex;
     align-items: center;
     justify-content: center;

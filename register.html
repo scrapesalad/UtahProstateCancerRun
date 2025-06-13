@@ -34,11 +34,11 @@
         .register-event-info {
             background: #fff;
             color: #222;
-            max-width: 600px;
+            max-width: 1200px;
             margin: 40px auto 0 auto;
-            border-radius: 18px;
-            box-shadow: 0 4px 32px rgba(0,0,0,0.08);
-            padding: 40px 32px 32px 32px;
+            border-radius: 0 !important;
+            box-shadow: 0 4px 32px rgba(14,77,146,0.08);
+            padding: 40px 40px 40px 40px;
         }
         .register-event-info h1 {
             color: #0E4D92;
@@ -67,16 +67,18 @@
         .register-btn-big {
             display: block;
             margin: 40px auto 0 auto;
-            padding: 24px 64px;
-            font-size: 2rem;
+            padding: 18px 0;
+            font-size: 1.2rem;
             font-weight: 800;
             background: #0E4D92;
             color: #fff;
             border: none;
-            border-radius: 12px;
-            box-shadow: 0 4px 18px rgba(14,77,146,0.10);
+            border-radius: 0 !important;
+            box-shadow: 0 2px 8px rgba(14,77,146,0.08);
             cursor: pointer;
             transition: background 0.2s, transform 0.2s;
+            width: 320px;
+            max-width: 100%;
         }
         .register-btn-big:hover {
             background: #1a6bb7;
@@ -84,11 +86,11 @@
         }
         .register-description {
             background: rgba(255,255,255,0.12);
-            border-radius: 18px;
+            border-radius: 0 !important;
             box-shadow: 0 2px 12px rgba(14,77,146,0.10);
             padding: 32px 24px;
             margin: 0 auto 24px auto;
-            max-width: 600px;
+            max-width: 1200px;
             color: #fff;
             font-size: 1.25rem;
             line-height: 1.7;
@@ -129,7 +131,7 @@
         .highlight-info {
             background: linear-gradient(90deg, #e0f2ff 60%, #b3e0ff 100%);
             color: #0E4D92;
-            border-radius: 8px;
+            border-radius: 0 !important;
             padding: 6px 14px;
             font-weight: 700;
             display: inline-block;
@@ -255,14 +257,15 @@
     </section>
 
     <!-- Main Event Card Section -->
-    <section class="main-event-card-section">
+     <!-- Main Event Card Section -->
+     <section class="main-event-card-section">
         <div class="main-event-card main-content-card">
             <div class="main-card-info-col">
                 <h1>SEPTEMBER 27, 2025</h1>
-                <div class="event-details">
-                    <p>Wheeler Historic Farm</p>
-                    <p>6351 S. 900 E.</p>
-                    <p>Murray, Utah 84121</p>
+                <div class="event-details" style="margin-bottom: 8px;">
+                    <p style="color:#0e4d92; font-size:1.25rem; line-height:1.1; margin: 0 0 2px 0;">Wheeler Historic Farm</p>
+                    <p style="color:#0e4d92; font-size:1.25rem; line-height:1.1; margin: 0 0 2px 0;">6351 S. 900 E.</p>
+                    <p style="color:#0e4d92; font-size:1.25rem; line-height:1.1; margin: 0;">Murray, Utah 84121</p>
                 </div>
                 <div class="event-stats">
                     <a href="register.html" class="stat-link" style="text-decoration:none;">
@@ -275,10 +278,10 @@
                 <a href="#" class="register-btn" target="_blank">REGISTER NOW</a>
             </div>
             <div class="main-card-logo-col bottom-align" style="display: flex; align-items: center; justify-content: center; padding: 0px 0; margin-left: -160px; min-width: 450px;">
-                <div style="background: #0e4d92; display: flex; justify-content: center; align-items: center; width: 250px; height: 250px; border-radius: 50%; margin: 0 auto;">
+                <div style="background: #fff; display: flex; justify-content: center; align-items: center; width: 270px; height: 270px; margin: 0 auto; box-shadow: 0 8px 32px rgba(14,77,146,0.18); transition: box-shadow 0.3s, border-color 0.3s;">
                     <img src="upcr-app/assets/images/logomain3333.png" alt="Utah Prostate Cancer Run Logo"
                          class="main-card-logo"
-                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; background: none; padding: 0; box-shadow: 0 0px 0px rgba(0,0,0,0.12);">
+                         style="width: 92%; height: 92%; object-fit: contain; border-radius: 0;">
                 </div>
             </div>
         </div>

@@ -101,7 +101,7 @@
                         <p style="color:#0e4d92; font-size:1.25rem; line-height:1.1; margin: 0;">Murray, Utah 84121</p>
                     </div>
                     <div class="event-stats">
-                        <a href="register.html" class="stat-link" style="text-decoration:none;">
+                        <a href="#" class="stat-link" id="distanceInfoBtn" style="text-decoration:none;">
                             <div class="stat">
                                 <span class="stat-label">Distance</span>
                                 <span class="stat-value">5K Run/Walk<br>1 Mile Walk</span>
@@ -282,6 +282,19 @@
       </div>
     </div>
 
+    <!-- Distance Info Modal -->
+    <div id="distanceInfoModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; z-index:10000;">
+      <div style="background:#fff; padding:32px 24px; border-radius:8px; max-width:90vw; max-height:90vh; box-shadow:0 8px 32px rgba(14,77,146,0.18); text-align:left; position:relative; overflow-y:auto; color:#223a5e;">
+        <span id="closeDistanceInfoModal" style="position:absolute; top:12px; right:18px; font-size:2rem; color:#333; cursor:pointer;">&times;</span>
+        <h2 style="color:#0e4d92; margin-bottom:16px;">About Event</h2>
+        <p>Get ready for the 2025 newly recharged Utah Prostate Cancer Run & Walk, brought to you by Summit Urology and Granger Medical! This epic community bash at Wheeler Historic Farm is all about fueling research, supporting patients, and boosting early detection to kick prostate cancer to the curb. Join the fun with a 5K run/walk, a chill 1-mile family stroll, and a ton of awesome family activities that'll keep everyone smiling. Celebrate our survivors, honor those we've lost, and make a difference! Registration is just $25 for 5K and $15 for 1-mile, with kids 6 & under joining the party for free. Check out utahprostatecancerrun.com for all the details and let's make waves together!</p>
+        <h3 style="color:#0e4d92; margin-top:24px;">5K Run & Walk</h3>
+        <p>This vibrant, family-friendly event winds through the farm's picturesque trails, offering a fun and accessible route for all participants. The course follows dirt and gravel paths, meandering alongside the tranquil Little Cottonwood Creek, which runs through the historic farm. Runners and walkers will enjoy lush greenery, views of grazing animals like cows and horses, and the charm of the farm's Victorian-era buildings. The flat, well-maintained trails ensure a smooth experience, perfect for soaking in the natural beauty while supporting prostate cancer research and awareness.</p>
+        <h3 style="color:#0e4d92; margin-top:24px;">1-Mile Family Stroll</h3>
+        <p>The Utah Prostate Cancer 1-Mile Family Stroll, is a fun, relaxed event perfect for families, friends, and supporters of all ages. The flat, stroller-friendly path ensures everyone can join the fun!</p>
+      </div>
+    </div>
+
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -309,6 +322,20 @@
         });
         window.addEventListener('click', function(event) {
           var modal = document.getElementById('registerModal');
+          if (event.target === modal) {
+            modal.style.display = 'none';
+          }
+        });
+        // Distance Info modal logic
+        document.getElementById('distanceInfoBtn').addEventListener('click', function(e) {
+          e.preventDefault();
+          document.getElementById('distanceInfoModal').style.display = 'flex';
+        });
+        document.getElementById('closeDistanceInfoModal').addEventListener('click', function() {
+          document.getElementById('distanceInfoModal').style.display = 'none';
+        });
+        window.addEventListener('click', function(event) {
+          var modal = document.getElementById('distanceInfoModal');
           if (event.target === modal) {
             modal.style.display = 'none';
           }

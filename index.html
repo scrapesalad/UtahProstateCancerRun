@@ -186,12 +186,12 @@
                     </div>
                     <div class="course-details-fixed">
                         <div class="event-details-text" style="text-align:left; font-size:1.15rem; color:#223a5e; max-width:400px; margin:0 auto;">
-                          <h3 style="margin-top:0;">5K Run/Walk</h3>
+                          <h3 style="margin-top:0;"><a href="#" id="runWalkInfoBtn" style="color:inherit; text-decoration:underline; cursor:pointer;">5K Run/Walk</a></h3>
                           <p>Run, jog, or casual walk through the Historic Farm</p>
                           <div><strong>Start Time:</strong> 9:00 AM</div>
                           <div><strong>Price:</strong> $25</div>
                           <hr style="margin:18px 0;">
-                          <h3>1 Mile Walk</h3>
+                          <h3><a href="#" id="mileWalkInfoBtn" style="color:inherit; text-decoration:underline; cursor:pointer;">1 Mile Walk</a></h3>
                           <p>Family-friendly walk perfect for all ages and abilities</p>
                           <div><strong>Start Time:</strong> 9:30 AM</div>
                           <div><strong>Price:</strong> $15</div>
@@ -288,6 +288,24 @@
       </div>
     </div>
 
+    <!-- 5K Run/Walk Info Modal -->
+    <div id="runWalkInfoModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; z-index:10000;">
+      <div style="background:#fff; padding:32px 24px; border-radius:8px; max-width:90vw; max-height:90vh; box-shadow:0 8px 32px rgba(14,77,146,0.18); text-align:left; position:relative; overflow-y:auto; color:#223a5e;">
+        <span id="closeRunWalkInfoModal" style="position:absolute; top:12px; right:18px; font-size:2rem; color:#333; cursor:pointer;">&times;</span>
+        <h2 style="color:#0e4d92; margin-bottom:16px;">5K Run & Walk</h2>
+        <p>This vibrant, family-friendly event winds through the farm's picturesque trails, offering a fun and accessible route for all participants. The course follows dirt and gravel paths, meandering alongside the tranquil Little Cottonwood Creek, which runs through the historic farm. Runners and walkers will enjoy lush greenery, views of grazing animals like cows and horses, and the charm of the farm's Victorian-era buildings. The flat, well-maintained trails ensure a smooth experience, perfect for soaking in the natural beauty while supporting prostate cancer research and awareness.</p>
+      </div>
+    </div>
+
+    <!-- 1 Mile Walk Info Modal -->
+    <div id="mileWalkInfoModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; z-index:10000;">
+      <div style="background:#fff; padding:32px 24px; border-radius:8px; max-width:90vw; max-height:90vh; box-shadow:0 8px 32px rgba(14,77,146,0.18); text-align:left; position:relative; overflow-y:auto; color:#223a5e;">
+        <span id="closeMileWalkInfoModal" style="position:absolute; top:12px; right:18px; font-size:2rem; color:#333; cursor:pointer;">&times;</span>
+        <h2 style="color:#0e4d92; margin-bottom:16px;">1-Mile Family Stroll</h2>
+        <p>The Utah Prostate Cancer 1-Mile Family Stroll, is a fun, relaxed event perfect for families, friends, and supporters of all ages. The flat, stroller-friendly path ensures everyone can join the fun!</p>
+      </div>
+    </div>
+
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -329,6 +347,34 @@
         });
         window.addEventListener('click', function(event) {
           var modal = document.getElementById('distanceInfoModal');
+          if (event.target === modal) {
+            modal.style.display = 'none';
+          }
+        });
+        // 5K Run/Walk Info modal logic
+        document.getElementById('runWalkInfoBtn').addEventListener('click', function(e) {
+          e.preventDefault();
+          document.getElementById('runWalkInfoModal').style.display = 'flex';
+        });
+        document.getElementById('closeRunWalkInfoModal').addEventListener('click', function() {
+          document.getElementById('runWalkInfoModal').style.display = 'none';
+        });
+        window.addEventListener('click', function(event) {
+          var modal = document.getElementById('runWalkInfoModal');
+          if (event.target === modal) {
+            modal.style.display = 'none';
+          }
+        });
+        // 1 Mile Walk Info modal logic
+        document.getElementById('mileWalkInfoBtn').addEventListener('click', function(e) {
+          e.preventDefault();
+          document.getElementById('mileWalkInfoModal').style.display = 'flex';
+        });
+        document.getElementById('closeMileWalkInfoModal').addEventListener('click', function() {
+          document.getElementById('mileWalkInfoModal').style.display = 'none';
+        });
+        window.addEventListener('click', function(event) {
+          var modal = document.getElementById('mileWalkInfoModal');
           if (event.target === modal) {
             modal.style.display = 'none';
           }

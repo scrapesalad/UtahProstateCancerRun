@@ -108,7 +108,7 @@
                             </div>
                         </a>
                     </div>
-                    <a href="#" class="register-btn" target="_blank">REGISTER NOW</a>
+                    <a href="#" class="register-btn" id="mainRegisterBtn">REGISTER NOW</a>
                 </div>
                 <div class="main-card-logo-col bottom-align" style="display: flex; align-items: center; justify-content: center; padding: 0px 0; margin-left: -160px; min-width: 450px;">
                     <div style="display: flex; justify-content: center; align-items: center; width: 270px; height: 270px; margin: 0 auto;">
@@ -273,20 +273,45 @@
       <img id="mapModalImg" src="upcr-app/assets/images/logomain3333.png" alt="Course Map Large" style="max-width:90vw; max-height:90vh; box-shadow:0 8px 32px rgba(14,77,146,0.18); background:#fff;">
     </div>
 
+    <!-- Registration Modal -->
+    <div id="registerModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; z-index:10000;">
+      <div style="background:#fff; padding:32px 24px; border-radius:8px; max-width:90vw; max-height:90vh; box-shadow:0 8px 32px rgba(14,77,146,0.18); text-align:center; position:relative;">
+        <span id="closeRegisterModal" style="position:absolute; top:12px; right:18px; font-size:2rem; color:#333; cursor:pointer;">&times;</span>
+        <h2 style="color:#0e4d92; margin-bottom:16px;">Registration will be open soon...</h2>
+        <p style="font-size:1.15rem; color:#223a5e;">Please check back later.</p>
+      </div>
+    </div>
+
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
                 const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                if (targetId && targetId !== "#") {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
                 }
             });
+        });
+        // Registration modal logic
+        document.getElementById('mainRegisterBtn').addEventListener('click', function(e) {
+          e.preventDefault();
+          document.getElementById('registerModal').style.display = 'flex';
+        });
+        document.getElementById('closeRegisterModal').addEventListener('click', function() {
+          document.getElementById('registerModal').style.display = 'none';
+        });
+        window.addEventListener('click', function(event) {
+          var modal = document.getElementById('registerModal');
+          if (event.target === modal) {
+            modal.style.display = 'none';
+          }
         });
     </script>
     <script src="script.js"></script>

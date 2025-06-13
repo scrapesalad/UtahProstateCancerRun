@@ -1025,7 +1025,7 @@ img {
     margin-right: -50vw !important;
     min-height: 100vh !important;
     height: 50vh !important;
-    background: var(--primary-blue) !important;
+    background: transparent !important;
     overflow: hidden !important;
     display: flex !important;
     align-items: center !important;

@@ -61,6 +61,34 @@
         margin-top: 32px !important;
       }
     }
+    @media (min-width: 901px) {
+      .hero-static-image-bg {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        z-index: 2 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 !important;
+      }
+      .hero-static-image {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        width: 320px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+        z-index: 3 !important;
+        opacity: 1 !important;
+        max-width: 95vw !important;
+        max-height: 60vh !important;
+        object-fit: contain !important;
+      }
+    }
     </style>
 </head>
 <body>
@@ -85,11 +113,11 @@
   </div>
 </header>
     </header>
-    <section class="hero-slider-section" style="display: flex; align-items: center; justify-content: flex-start; min-height: 320px;">
+    <section class="hero-slider-section" style="display: flex; align-items: center; justify-content: center; min-height: 320px; position: relative;">
         <img src="upcr-app/assets/images/first.jpeg" alt="Hero Background" class="hero-bg-image">
-        <div class="hero-static-image-bg" style="margin-left: -48px; transform: scale(1.5);">
+        <div class="hero-static-image-bg" style="margin-left: 0; transform: scale(1.5); display: flex; justify-content: center; align-items: center; width: 100%; position: absolute; left: 0; top: 0; height: 100%; z-index: 2;">
             <a href="index.html">
-                <img src="upcr-app/assets/images/static.png" alt="Hero Static" class="hero-static-image">
+                <img src="upcr-app/assets/images/statix.png" alt="Hero Static" class="hero-static-image" style="z-index: 3; opacity: 1;">
             </a>
         </div>
         <!-- Any other hero content here -->

@@ -89,6 +89,27 @@
         object-fit: contain !important;
       }
     }
+    .revamped-main-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(14,77,146,0.10);
+      padding: 48px 32px 40px 32px;
+      max-width: 600px;
+      margin: 0 auto 32px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 700px) {
+      .revamped-main-card {
+        padding: 28px 6vw 24px 6vw;
+        max-width: 98vw;
+      }
+      .main-card-info-col h1 {
+        font-size: 2rem;
+      }
+    }
     </style>
 </head>
 <body>
@@ -117,7 +138,7 @@
         <img src="upcr-app/assets/images/first.jpeg" alt="Hero Background" class="hero-bg-image">
         <div class="hero-static-image-bg" style="margin-left: 0; transform: scale(1.5); display: flex; justify-content: center; align-items: center; width: 100%; position: absolute; left: 0; top: 0; height: 100%; z-index: 2;">
             <a href="index.html">
-                <img src="upcr-app/assets/images/statix.png" alt="Hero Static" class="hero-static-image" style="z-index: 3; opacity: 1;">
+                <img src="upcr-app/assets/images/statix5.png" alt="Hero Static" class="hero-static-image" style="z-index: 3; opacity: 1;">
             </a>
         </div>
         <!-- Any other hero content here -->
@@ -125,30 +146,23 @@
     <div class="site-wrapper">
         <!-- Main Event Card Section -->
         <section id="main-event" class="main-event-card-section">
-            <div class="main-event-card main-content-card">
+            <div class="main-event-card main-content-card revamped-main-card">
                 <div class="main-card-info-col">
-                    <h1>SEPTEMBER 27, 2025</h1>
-                    <div class="event-details" style="margin-bottom: 8px;">
+                    <h1 style="font-size:2.5rem; margin-bottom:12px;">SEPTEMBER 27, 2025</h1>
+                    <div class="event-details" style="margin-bottom: 16px;">
                         <p style="color:#0e4d92; font-size:1.25rem; line-height:1.1; margin: 0 0 2px 0;">Wheeler Historic Farm</p>
                         <p style="color:#0e4d92; font-size:1.25rem; line-height:1.1; margin: 0 0 2px 0;">6351 S. 900 E.</p>
                         <p style="color:#0e4d92; font-size:1.25rem; line-height:1.1; margin: 0;">Murray, Utah 84121</p>
                     </div>
-                    <div class="event-stats">
+                    <div class="event-stats" style="margin-bottom: 18px;">
                         <a href="#" class="stat-link" id="distanceInfoBtn" style="text-decoration:none;">
-                            <div class="stat">
-                                <span class="stat-label">Distance</span>
-                                <span class="stat-value">5K Run/Walk<br>1 Mile Walk</span>
+                            <div class="stat" style="background:#f2f7fb; border-radius:12px; box-shadow:0 2px 8px rgba(14,77,146,0.06); padding:18px 32px; margin:0 auto; max-width:260px;">
+                                <span class="stat-label" style="font-size:1.1rem; color:#0e4d92;">Distance</span>
+                                <span class="stat-value" style="font-size:1.25rem; font-weight:800; color:#223a5e;">5K Run/Walk<br>1 Mile Walk</span>
                             </div>
                         </a>
                     </div>
-                    <a href="#" class="register-btn" id="mainRegisterBtn">REGISTER NOW</a>
-                </div>
-                <div class="main-card-logo-col bottom-align" style="display: flex; align-items: center; justify-content: center; padding: 0px 0; margin-left: -160px; min-width: 450px;">
-                    <div style="display: flex; justify-content: center; align-items: center; width: 270px; height: 270px; margin: 0 auto;">
-                        <img src="upcr-app/assets/images/logomain3333.png" alt="Utah Prostate Cancer Run Logo"
-                             class="main-card-logo"
-                             style="width: 92%; height: 92%; object-fit: contain;">
-                    </div>
+                    <a href="#" class="register-btn" id="mainRegisterBtn" style="margin: 0 auto; display: block; max-width: 320px; font-size:1.25rem; padding: 18px 0; border-radius: 8px;">REGISTER NOW</a>
                 </div>
             </div>
         </section>

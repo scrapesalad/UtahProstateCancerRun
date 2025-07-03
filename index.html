@@ -128,7 +128,7 @@
         <li><a href="#mission">The Cause</a></li>
         <li><a href="#event-details">Event</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="register-link"><a href="#main-event">Register Now</a></li>
+        <li class="register-link"><a href="https://runsignup.com/Race/UT/SaltLakeCity/UtahProstateCancerRun" target="_blank" rel="noopener">Register Now</a></li>
       </ul>
     </nav>
   </div>
@@ -162,7 +162,7 @@
                             </div>
                         </a>
                     </div>
-                    <a href="#" class="register-btn" id="mainRegisterBtn" style="margin: 0 auto; display: block; max-width: 320px; font-size:1.25rem; padding: 18px 0; border-radius: 8px;">REGISTER NOW</a>
+                    <a href="https://runsignup.com/Race/UT/SaltLakeCity/UtahProstateCancerRun" class="register-btn" id="mainRegisterBtn" target="_blank" rel="noopener" style="margin: 0 auto; display: block; max-width: 320px; font-size:1.25rem; padding: 18px 0; border-radius: 8px;">REGISTER NOW</a>
                 </div>
             </div>
         </section>
@@ -366,19 +366,19 @@
             });
         });
         // Registration modal logic
-        document.getElementById('mainRegisterBtn').addEventListener('click', function(e) {
-          e.preventDefault();
-          document.getElementById('registerModal').style.display = 'flex';
-        });
-        document.getElementById('closeRegisterModal').addEventListener('click', function() {
-          document.getElementById('registerModal').style.display = 'none';
-        });
-        window.addEventListener('click', function(event) {
-          var modal = document.getElementById('registerModal');
-          if (event.target === modal) {
-            modal.style.display = 'none';
-          }
-        });
+        // document.getElementById('mainRegisterBtn').addEventListener('click', function(e) {
+        //   e.preventDefault();
+        //   document.getElementById('registerModal').style.display = 'flex';
+        // });
+        // document.getElementById('closeRegisterModal').addEventListener('click', function() {
+        //   document.getElementById('registerModal').style.display = 'none';
+        // });
+        // window.addEventListener('click', function(event) {
+        //   var modal = document.getElementById('registerModal');
+        //   if (event.target === modal) {
+        //     modal.style.display = 'none';
+        //   }
+        // });
         // Distance Info modal logic
         document.getElementById('distanceInfoBtn').addEventListener('click', function(e) {
           e.preventDefault();

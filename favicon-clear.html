@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Cache Clear</title>
+    <meta http-equiv="refresh" content="3;url=index.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0e4d92;
+        }
+        .favicon-preview {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        .favicon-preview img {
+            width: 32px;
+            height: 32px;
+            margin: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+    <!-- Force favicon reload with new version -->
+    <link rel="icon" type="image/x-icon" href="upcr-app/assets/images/logos/favicon.ico?v=8">
+    <link rel="icon" type="image/png" sizes="16x16" href="upcr-app/assets/images/logos/favicon-16x16.png?v=8">
+    <link rel="icon" type="image/png" sizes="32x32" href="upcr-app/assets/images/logos/favicon-32x32.png?v=8">
+    <link rel="apple-touch-icon" sizes="180x180" href="upcr-app/assets/images/logos/apple-touch-icon.png?v=8">
+    <link rel="icon" type="image/png" sizes="192x192" href="upcr-app/assets/images/logos/android-chrome-192x192.png?v=8">
+    <link rel="icon" type="image/png" sizes="512x512" href="upcr-app/assets/images/logos/android-chrome-512x512.png?v=8">
+    <link rel="manifest" href="upcr-app/assets/images/logos/site.webmanifest?v=8">
+    <meta name="theme-color" content="#0e4d92">
+</head>
+<body>
+    <div class="container">
+        <h1>🔄 Favicon Cache Clear</h1>
+        <p>This page is helping to clear your browser's favicon cache.</p>
+        <p>You will be redirected to the main page in 3 seconds...</p>
+        
+        <div class="favicon-preview">
+            <h3>Your Favicon Should Look Like This:</h3>
+            <img src="upcr-app/assets/images/logos/favicon-32x32.png?v=8" alt="32x32 favicon">
+            <img src="upcr-app/assets/images/logos/favicon-16x16.png?v=8" alt="16x16 favicon">
+            <img src="upcr-app/assets/images/logos/android-chrome-192x192.png?v=8" alt="192x192 favicon">
+        </div>
+        
+        <p><strong>If you don't see the correct favicon in your browser tab, try:</strong></p>
+        <ul style="text-align: left; max-width: 400px; margin: 0 auto;">
+            <li>Hard refresh: Ctrl+F5 (Windows) or Cmd+Shift+R (Mac)</li>
+            <li>Clear browser cache and cookies</li>
+            <li>Close and reopen your browser</li>
+        </ul>
+    </div>
+</body>
+</html> 

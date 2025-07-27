@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow crawling of unnecessary files
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.vercel/
+Disallow: /upcr.git/
+Disallow: /*.jar
+Disallow: /*.json
+Disallow: /*.md
+
+# Allow important assets
+Allow: /upcr-app/assets/images/
+Allow: /upcr-app/assets/fonts/
+Allow: /upcr-app/assets/videos/
+Allow: /styles.css
+Allow: /script.js
+
+# Sitemap location
+Sitemap: https://utahprostatecancerrun.com/sitemap.xml 

@@ -32,6 +32,14 @@
   ],
   "routes": [
     {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/upcr-app/assets/images/logos/(.*)",
+      "dest": "/upcr-app/assets/images/logos/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }

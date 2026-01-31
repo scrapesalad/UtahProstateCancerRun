@@ -1,28 +1,44 @@
+# Utah Prostate Cancer Run & Walk - robots.txt
+# https://www.utahprostatecancerrun.com/robots.txt
+
+# Default rules for all crawlers
 User-agent: *
 Allow: /
 
-# Allow all search engines to crawl the site
+# Explicitly allow AI crawlers for content discovery and event visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: PPLX-Index
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Google and Bing specific rules
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-# Disallow crawling of unnecessary files
-Disallow: /node_modules/
-Disallow: /.git/
-Disallow: /.vercel/
-Disallow: /upcr.git/
-Disallow: /*.jar
-Disallow: /*.json
-Disallow: /*.md
-
-# Allow important assets
-Allow: /upcr-app/assets/images/
-Allow: /upcr-app/assets/fonts/
-Allow: /upcr-app/assets/videos/
-Allow: /styles.css
-Allow: /script.js
-
 # Sitemap location
-Sitemap: https://utahprostatecancerrun.com/sitemap.xml 
+Sitemap: https://www.utahprostatecancerrun.com/sitemap.xml

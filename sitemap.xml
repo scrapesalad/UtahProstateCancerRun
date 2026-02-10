@@ -3,7 +3,7 @@
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://www.utahprostatecancerrun.com/</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- Event Details Page -->
   <url>
     <loc>https://www.utahprostatecancerrun.com/Event.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -19,7 +19,7 @@
   <!-- Registration Page - High priority for conversions -->
   <url>
     <loc>https://www.utahprostatecancerrun.com/register.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -27,7 +27,7 @@
   <!-- The Cause Page -->
   <url>
     <loc>https://www.utahprostatecancerrun.com/cause.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -35,7 +35,7 @@
   <!-- Contact Page -->
   <url>
     <loc>https://www.utahprostatecancerrun.com/contact.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -43,49 +43,49 @@
   <!-- City Landing Pages -->
   <url>
     <loc>https://www.utahprostatecancerrun.com/cities/salt-lake-city.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.utahprostatecancerrun.com/cities/provo.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.utahprostatecancerrun.com/cities/ogden.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.utahprostatecancerrun.com/cities/sandy.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.utahprostatecancerrun.com/cities/west-jordan.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.utahprostatecancerrun.com/cities/draper.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.utahprostatecancerrun.com/cities/lehi.html</loc>
-    <lastmod>2025-01-31</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

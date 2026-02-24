@@ -162,6 +162,15 @@ img {
     margin-top: 5px;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.contact-container a[href="index.html"],
+.register-description a[href="index.html"] {
+    text-decoration: none;
+}
 .logo img {
     max-height: 40px;
     height: auto;
